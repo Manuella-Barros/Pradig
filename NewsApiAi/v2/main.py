@@ -1,8 +1,6 @@
 import json
 import os
 
-#             AQUI EU PEGO O ID (URI) DOS ARQUIVOS E SALVO EM UMA NOVA PASTA
-
 filesName = os.listdir("rawData") # pega o nome de todos os arquivos na pasta rawData
 
 for file in filesName:

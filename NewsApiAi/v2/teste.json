@@ -1,0 +1,2831 @@
+{
+  "type": "object",
+  "properties": {
+    "uri": {
+      "type": "object",
+      "properties": {
+        "info": {
+          "type": "object",
+          "properties": {
+            "uri": {
+              "type": "string"
+            },
+            "concepts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  }, // TEM
+                  "type": {
+                    "type": "string"
+                  }, // TEM
+                  "score": {
+                    "type": "integer"
+                  }, // TEM
+                  "label": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  }, // TEM
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "object",
+                        "properties": {
+                          "eng": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  } // TEM
+                  "image": {
+                    "type": "string"
+                  }, // X
+                  "synonyms": {
+                    "type": "object",
+                    "properties": {}
+                  }, // X
+                  "trendingScore": {
+                    "type": "object",
+                    "properties": {
+                      "news": {
+                        "type": "object",
+                        "properties": {
+                          "score": {
+                            "type": "double"
+                          },
+                          "testPopFq": {
+                            "type": "integer"
+                          },
+                          "nullPopFq": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }, // X
+                }
+              }
+            }, // TEM
+            "title": {
+              "type": "object",
+              "properties": {
+                "eng": {
+                  "type": "string"
+                }
+              }
+            }, // TEM
+            "eventDate": {
+              "type": "string"
+            }, // TEM
+            "location": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "object",
+                  "properties": {
+                    "eng": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }, // TEM
+            "categories": {
+              "type": "object",
+              "properties": {
+                "uri": {
+                  "type": "string"
+                }, // TEM
+                "label": {
+                  "type": "string"
+                }, // TEM
+                "wgt": {
+                  "type": "integer"
+                } // TEM
+              }
+            }, // TEM
+            "stories": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "articleCount": {
+                    "type": "integer"
+                  },
+                  "lang": {
+                    "type": "string"
+                  },
+                  "avgCos": {
+                    "type": "double"
+                  },
+                  "variance": {
+                    "type": "double"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "isUserSetTitle": {
+                    "type": "boolean"
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "score": {
+                          "type": "integer"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "synonyms": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "trendingScore": {
+                          "type": "object",
+                          "properties": {
+                            "news": {
+                              "type": "object",
+                              "properties": {
+                                "score": {
+                                  "type": "double"
+                                },
+                                "testPopFq": {
+                                  "type": "integer"
+                                },
+                                "nullPopFq": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "object",
+                              "properties": {
+                                "eng": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "location": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isUserSetLocation": {
+                    "type": "boolean"
+                  },
+                  "categories": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "wgt": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "medoidArticle": {
+                    "type": "object",
+                    "properties": {
+                      "uri": {
+                        "type": "string"
+                      },
+                      "lang": {
+                        "type": "string"
+                      },
+                      "isDuplicate": {
+                        "type": "boolean"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "dateTime": {
+                        "type": "string"
+                      },
+                      "sim": {
+                        "type": "double"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "source": {
+                        "type": "object",
+                        "properties": {
+                          "uri": {
+                            "type": "string"
+                          },
+                          "dataType": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "location": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              },
+                              "label": {
+                                "type": "object",
+                                "properties": {
+                                  "eng": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "locationValidated": {
+                            "type": "boolean"
+                          },
+                          "ranking": {
+                            "type": "object",
+                            "properties": {
+                              "importanceRank": {
+                                "type": "integer"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "concepts": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "uri": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "score": {
+                              "type": "integer"
+                            },
+                            "label": {
+                              "type": "object",
+                              "properties": {
+                                "eng": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "image": {
+                              "type": "string"
+                            },
+                            "synonyms": {
+                              "type": "object",
+                              "properties": {}
+                            },
+                            "trendingScore": {
+                              "type": "object",
+                              "properties": {
+                                "news": {
+                                  "type": "object",
+                                  "properties": {
+                                    "score": {
+                                      "type": "double"
+                                    },
+                                    "testPopFq": {
+                                      "type": "integer"
+                                    },
+                                    "nullPopFq": {
+                                      "type": "integer"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "location": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "label": {
+                                  "type": "object",
+                                  "properties": {
+                                    "eng": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "categories": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "uri": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "string"
+                            },
+                            "wgt": {
+                              "type": "integer"
+                            }
+                          }
+                        }
+                      },
+                      "links": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "videos": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "image": {
+                        "type": "string"
+                      },
+                      "duplicateList": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "originalArticle": {
+                        "type": "string"
+                      },
+                      "eventUri": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "object",
+                            "properties": {
+                              "eng": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "extractedDates": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "amb": {
+                              "type": "boolean"
+                            },
+                            "imp": {
+                              "type": "boolean"
+                            },
+                            "date": {
+                              "type": "string"
+                            },
+                            "textStart": {
+                              "type": "integer"
+                            },
+                            "textEnd": {
+                              "type": "integer"
+                            }
+                          }
+                        }
+                      },
+                      "shares": {
+                        "type": "object",
+                        "properties": {
+                          "facebook": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "wgt": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "storyDate": {
+                    "type": "string"
+                  },
+                  "isUserSetDate": {
+                    "type": "boolean"
+                  },
+                  "extractedDate": {
+                    "type": "string"
+                  },
+                  "averageDate": {
+                    "type": "string"
+                  },
+                  "images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "commonDates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amb": {
+                          "type": "boolean"
+                        },
+                        "imp": {
+                          "type": "boolean"
+                        },
+                        "date": {
+                          "type": "string"
+                        },
+                        "textStart": {
+                          "type": "integer"
+                        },
+                        "textEnd": {
+                          "type": "integer"
+                        },
+                        "freq": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "socialScore": {
+                    "type": "double"
+                  },
+                  "wgt": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }, // X
+            "totalArticleCount": {
+              "type": "integer"
+            }, // X
+            "summary": {
+              "type": "object",
+              "properties": {
+                "eng": {
+                  "type": "string"
+                }
+              }
+            }, // X
+            "images": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }, // X
+            "articleCounts": {
+              "type": "object",
+              "properties": {
+                "eng": {
+                  "type": "integer"
+                }
+              }
+            }, // X
+            "socialScore": {
+              "type": "double"
+            }, // X
+            "commonDates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "amb": {
+                    "type": "boolean"
+                  },
+                  "imp": {
+                    "type": "boolean"
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "textStart": {
+                    "type": "integer"
+                  },
+                  "textEnd": {
+                    "type": "integer"
+                  },
+                  "freq": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }, // X
+            "wgt": {
+              "type": "integer"
+            } // X
+          }
+        },
+        "articles": {
+          "type": "object",
+          "properties": {
+            "totalResults": {
+              "type": "integer"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "count": {
+              "type": "integer"
+            },
+            "pages": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "lang": {
+                    "type": "string"
+                  },
+                  "isDuplicate": {
+                    "type": "boolean"
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "time": {
+                    "type": "string"
+                  },
+                  "dateTime": {
+                    "type": "string"
+                  },
+                  "sim": {
+                    "type": "double"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "uri": {
+                        "type": "string"
+                      },
+                      "dataType": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "object",
+                            "properties": {
+                              "eng": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "locationValidated": {
+                        "type": "boolean"
+                      },
+                      "ranking": {
+                        "type": "object",
+                        "properties": {
+                          "importanceRank": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "score": {
+                          "type": "integer"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "synonyms": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "trendingScore": {
+                          "type": "object",
+                          "properties": {
+                            "news": {
+                              "type": "object",
+                              "properties": {
+                                "score": {
+                                  "type": "double"
+                                },
+                                "testPopFq": {
+                                  "type": "integer"
+                                },
+                                "nullPopFq": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "object",
+                              "properties": {
+                                "eng": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "categories": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "wgt": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "links": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "videos": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "duplicateList": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "originalArticle": {
+                    "type": "string"
+                  },
+                  "eventUri": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "object",
+                        "properties": {
+                          "eng": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "extractedDates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amb": {
+                          "type": "boolean"
+                        },
+                        "imp": {
+                          "type": "boolean"
+                        },
+                        "date": {
+                          "type": "string"
+                        },
+                        "textStart": {
+                          "type": "integer"
+                        },
+                        "textEnd": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "shares": {
+                    "type": "object",
+                    "properties": {
+                      "facebook": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "wgt": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }, // X
+        "articleUris": {
+          "type": "object",
+          "properties": {
+            "totalResults": {
+              "type": "integer"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "count": {
+              "type": "integer"
+            },
+            "pages": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }, // X
+        "keywordAggr": {
+          "type": "object",
+          "properties": {
+            "warning": {
+              "type": "string"
+            },
+            "usedResults": {
+              "type": "integer"
+            },
+            "totalResults": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "keyword": {
+                    "type": "string"
+                  },
+                  "weight": {
+                    "type": "double"
+                  }
+                }
+              }
+            }
+          }
+        }, // X
+        "sourceExAggr": {
+          "type": "object",
+          "properties": {
+            "warning": {
+              "type": "string"
+            },
+            "usedResults": {
+              "type": "integer"
+            },
+            "totalResults": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "uri": {
+                        "type": "string"
+                      },
+                      "dataType": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "object",
+                            "properties": {
+                              "eng": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "locationValidated": {
+                        "type": "boolean"
+                      },
+                      "ranking": {
+                        "type": "object",
+                        "properties": {
+                          "importanceRank": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "counts": {
+                    "type": "object",
+                    "properties": {
+                      "date": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }, // X
+        "dateMentionAggr": {
+          "type": "object",
+          "properties": {
+            "warning": {
+              "type": "string"
+            },
+            "usedResults": {
+              "type": "integer"
+            },
+            "totalResults": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string"
+                  },
+                  "count": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }, // X
+        "articleTrend": {
+          "type": "object",
+          "properties": {
+            "totalResults": {
+              "type": "integer"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "count": {
+              "type": "integer"
+            },
+            "pages": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "lang": {
+                    "type": "string"
+                  },
+                  "isDuplicate": {
+                    "type": "boolean"
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "time": {
+                    "type": "string"
+                  },
+                  "dateTime": {
+                    "type": "string"
+                  },
+                  "sim": {
+                    "type": "double"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "uri": {
+                        "type": "string"
+                      },
+                      "dataType": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "object",
+                            "properties": {
+                              "eng": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "locationValidated": {
+                        "type": "boolean"
+                      },
+                      "ranking": {
+                        "type": "object",
+                        "properties": {
+                          "importanceRank": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "score": {
+                          "type": "integer"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "synonyms": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "trendingScore": {
+                          "type": "object",
+                          "properties": {
+                            "news": {
+                              "type": "object",
+                              "properties": {
+                                "score": {
+                                  "type": "double"
+                                },
+                                "testPopFq": {
+                                  "type": "integer"
+                                },
+                                "nullPopFq": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "object",
+                              "properties": {
+                                "eng": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "categories": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "wgt": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "links": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "videos": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "duplicateList": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "originalArticle": {
+                    "type": "string"
+                  },
+                  "eventUri": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "object",
+                        "properties": {
+                          "eng": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "extractedDates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amb": {
+                          "type": "boolean"
+                        },
+                        "imp": {
+                          "type": "boolean"
+                        },
+                        "date": {
+                          "type": "string"
+                        },
+                        "textStart": {
+                          "type": "integer"
+                        },
+                        "textEnd": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "shares": {
+                    "type": "object",
+                    "properties": {
+                      "facebook": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "wgt": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }, // X
+        "similarEvents": {
+          "type": "object",
+          "properties": {
+            "totalResults": {
+              "type": "integer"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "count": {
+              "type": "integer"
+            },
+            "pages": {
+              "type": "integer"
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "score": {
+                          "type": "integer"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "image": {
+                          "type": "string"
+                        },
+                        "synonyms": {
+                          "type": "object",
+                          "properties": {}
+                        },
+                        "trendingScore": {
+                          "type": "object",
+                          "properties": {
+                            "news": {
+                              "type": "object",
+                              "properties": {
+                                "score": {
+                                  "type": "double"
+                                },
+                                "testPopFq": {
+                                  "type": "integer"
+                                },
+                                "nullPopFq": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "location": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "object",
+                              "properties": {
+                                "eng": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "stories": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "uri": {
+                          "type": "string"
+                        },
+                        "articleCount": {
+                          "type": "integer"
+                        },
+                        "lang": {
+                          "type": "string"
+                        },
+                        "avgCos": {
+                          "type": "double"
+                        },
+                        "variance": {
+                          "type": "double"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "isUserSetTitle": {
+                          "type": "boolean"
+                        },
+                        "concepts": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "uri": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "score": {
+                                "type": "integer"
+                              },
+                              "label": {
+                                "type": "object",
+                                "properties": {
+                                  "eng": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "image": {
+                                "type": "string"
+                              },
+                              "synonyms": {
+                                "type": "object",
+                                "properties": {}
+                              },
+                              "trendingScore": {
+                                "type": "object",
+                                "properties": {
+                                  "news": {
+                                    "type": "object",
+                                    "properties": {
+                                      "score": {
+                                        "type": "double"
+                                      },
+                                      "testPopFq": {
+                                        "type": "integer"
+                                      },
+                                      "nullPopFq": {
+                                        "type": "integer"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "location": {
+                                "type": "object",
+                                "properties": {
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "label": {
+                                    "type": "object",
+                                    "properties": {
+                                      "eng": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "location": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              },
+                              "label": {
+                                "type": "object",
+                                "properties": {
+                                  "eng": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "isUserSetLocation": {
+                          "type": "boolean"
+                        },
+                        "categories": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "uri": {
+                                "type": "string"
+                              },
+                              "label": {
+                                "type": "string"
+                              },
+                              "wgt": {
+                                "type": "integer"
+                              }
+                            }
+                          }
+                        },
+                        "medoidArticle": {
+                          "type": "object",
+                          "properties": {
+                            "uri": {
+                              "type": "string"
+                            },
+                            "lang": {
+                              "type": "string"
+                            },
+                            "isDuplicate": {
+                              "type": "boolean"
+                            },
+                            "date": {
+                              "type": "string"
+                            },
+                            "time": {
+                              "type": "string"
+                            },
+                            "dateTime": {
+                              "type": "string"
+                            },
+                            "sim": {
+                              "type": "double"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "body": {
+                              "type": "string"
+                            },
+                            "source": {
+                              "type": "object",
+                              "properties": {
+                                "uri": {
+                                  "type": "string"
+                                },
+                                "dataType": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "location": {
+                                  "type": "object",
+                                  "properties": {
+                                    "type": {
+                                      "type": "string"
+                                    },
+                                    "label": {
+                                      "type": "object",
+                                      "properties": {
+                                        "eng": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "locationValidated": {
+                                  "type": "boolean"
+                                },
+                                "ranking": {
+                                  "type": "object",
+                                  "properties": {
+                                    "importanceRank": {
+                                      "type": "integer"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "concepts": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "uri": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "score": {
+                                    "type": "integer"
+                                  },
+                                  "label": {
+                                    "type": "object",
+                                    "properties": {
+                                      "eng": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "image": {
+                                    "type": "string"
+                                  },
+                                  "synonyms": {
+                                    "type": "object",
+                                    "properties": {}
+                                  },
+                                  "trendingScore": {
+                                    "type": "object",
+                                    "properties": {
+                                      "news": {
+                                        "type": "object",
+                                        "properties": {
+                                          "score": {
+                                            "type": "double"
+                                          },
+                                          "testPopFq": {
+                                            "type": "integer"
+                                          },
+                                          "nullPopFq": {
+                                            "type": "integer"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "location": {
+                                    "type": "object",
+                                    "properties": {
+                                      "type": {
+                                        "type": "string"
+                                      },
+                                      "label": {
+                                        "type": "object",
+                                        "properties": {
+                                          "eng": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "categories": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "uri": {
+                                    "type": "string"
+                                  },
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "wgt": {
+                                    "type": "integer"
+                                  }
+                                }
+                              }
+                            },
+                            "links": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "videos": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "image": {
+                              "type": "string"
+                            },
+                            "duplicateList": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "originalArticle": {
+                              "type": "string"
+                            },
+                            "eventUri": {
+                              "type": "string"
+                            },
+                            "location": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "label": {
+                                  "type": "object",
+                                  "properties": {
+                                    "eng": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "extractedDates": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "amb": {
+                                    "type": "boolean"
+                                  },
+                                  "imp": {
+                                    "type": "boolean"
+                                  },
+                                  "date": {
+                                    "type": "string"
+                                  },
+                                  "textStart": {
+                                    "type": "integer"
+                                  },
+                                  "textEnd": {
+                                    "type": "integer"
+                                  }
+                                }
+                              }
+                            },
+                            "shares": {
+                              "type": "object",
+                              "properties": {
+                                "facebook": {
+                                  "type": "integer"
+                                }
+                              }
+                            },
+                            "wgt": {
+                              "type": "integer"
+                            }
+                          }
+                        },
+                        "storyDate": {
+                          "type": "string"
+                        },
+                        "isUserSetDate": {
+                          "type": "boolean"
+                        },
+                        "extractedDate": {
+                          "type": "string"
+                        },
+                        "averageDate": {
+                          "type": "string"
+                        },
+                        "images": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "commonDates": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "amb": {
+                                "type": "boolean"
+                              },
+                              "imp": {
+                                "type": "boolean"
+                              },
+                              "date": {
+                                "type": "string"
+                              },
+                              "textStart": {
+                                "type": "integer"
+                              },
+                              "textEnd": {
+                                "type": "integer"
+                              },
+                              "freq": {
+                                "type": "integer"
+                              }
+                            }
+                          }
+                        },
+                        "socialScore": {
+                          "type": "double"
+                        },
+                        "wgt": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "eventDate": {
+                    "type": "string"
+                  },
+                  "totalArticleCount": {
+                    "type": "integer"
+                  },
+                  "title": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "summary": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "object",
+                        "properties": {
+                          "eng": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "categories": {
+                    "type": "object",
+                    "properties": {
+                      "uri": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      },
+                      "wgt": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "articleCounts": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "socialScore": {
+                    "type": "double"
+                  },
+                  "commonDates": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amb": {
+                          "type": "boolean"
+                        },
+                        "imp": {
+                          "type": "boolean"
+                        },
+                        "date": {
+                          "type": "string"
+                        },
+                        "textStart": {
+                          "type": "integer"
+                        },
+                        "textEnd": {
+                          "type": "integer"
+                        },
+                        "freq": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "wgt": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        } // X
+      }
+    }
+  }
+}
+
+
+{
+	"eng-9375173": {
+		"articles": {
+			"results": [
+				{
+
+
+
+
+
+                  
+					"uri": "8020075425",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-09",
+					"time": "13:06:13",
+					"dateTime": "2024-03-09T13:06:13Z",
+					"sim": 0.6745098233222961,
+					"url": "https:\/\/www.swishappeal.com\/wnba\/2024\/3\/9\/24093884\/wnba-second-spectrum-optical-tracking-draft-sold-out-canada-preseason-expansion-la-sparks-sea-storm",
+					"title": "Optical tracking, a sold-out draft, another preseason game in Canada and more WNBA news",
+					"body": "Momentum rapidly is building for the 2024 WNBA season. Let's catch up on the recent W-related news.\n\nOn Tuesday, the WNBA announced a multi-year partnership with Second Spectrum, which will provide optical tracking in all WNBA arenas. The WNBA will be the only women's pro sports league in the United States with league-wide advanced tracking.\n\nWith the data gleaned from three-dimensional player- and ball-tracking, WNBA teams can engage in more sophisticated analysis of team strengths, weaknesses and strategies.\n\nOn the partnership, Commissioner Cathy Engelbert said:\n\nTechnology continues to fundamentally change the sports landscape. Deploying state-of-the-art optical tracking technology through Genius Sports will deliver rich data to our teams that they can leverage to enhance player performance while informing in-game strategy and enable a new wave of insights and media elements for fans.\n\nLooks like everyone is excited about the WNBA Draft!\n\nOpen to fans for the first time since 2016, tickets to WNBA Draft 2024 sold out in 15 minutes. Congratulations to 1,000 lucky fans who will be attendance to hear Commissioner Cathy Engelbert call Caitlin Clark's name when the Indiana Fever make the first pick.\n\nFor the second-straight year, the WNBA will hold a preseason game in Canada. After last year's successful exhibition in Toronto between the Chicago Sky and Minnesota Lynx, a preseason match between the Los Angeles Sparks and Seattle Storm will take place in Edmonton on Sunday, May 5.\n\nOur Canadian correspondent, Chelsea Leite, has the details about the event, as well as some interesting information about Edmonton's historical significance to women's basketball in Canada.\n\nIn additional Canadian WNBA news, Toronto has re-emerged a potential site for an expansion team.\n\nWhile the Storm and Sparks will spend part of their preseason north of the border, the Las Vegas Aces are heading to A'ja Wilson's hometown, playing a preseason game on Saturday, May 11 at Colonial Life Arena in Columbia, SC against the Puerto Rican national team.\n\nThe Aces also might be sporting their new uniforms, which will include a new Ally jersey patch.\n\nEpisode 1 of Season 3 of \"Off Top,\" the WNBA's interview series hosted by Ari Chambers, debuted on Friday, Mar. 8, International Women's Day. Chambers chats with 2023 Rookie of the Year Aliyah Boston and 2022 Rookie of the Year Rhyne Howard, both of whom are participants in the 2024 Player Marketing Agreement cohort.",
+					"eventUri": "eng-9375173",
+					"source": {
+						"uri": "swishappeal.com",
+						"dataType": "news",
+						"title": "Swish Appeal"
+					},
+					"image": "https:\/\/cdn.vox-cdn.com\/thumbor\/1QQwd8qL5GxJj2UMio8gRTonjWY=\/0x460:2400x1660\/fit-in\/1200x600\/cdn.vox-cdn.com\/uploads\/chorus_asset\/file\/25324164\/1663315728.jpg",
+
+					"dateTimePub": "2024-03-09T13:05:47Z",
+					"dataType": "news",
+					"authors": [
+						{
+							"uri": "cat_ariail@swishappeal.com",
+							"name": "Cat Ariail",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"sentiment": 0.3333333333333333,
+					"wgt": 447685573,
+					"relevance": 1,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				},
+				{
+					"uri": "2024-03-281725732",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-08",
+					"time": "02:54:18",
+					"dateTime": "2024-03-08T02:54:18Z",
+					"dateTimePub": "2024-03-07T21:03:37Z",
+					"dataType": "news",
+					"sim": 0.7215686440467834,
+					"url": "https:\/\/ottawasun.com\/sports\/basketball\/wnba-to-hold-pre-season-game-in-edmonton\/wcm\/912bf2a6-58fd-4020-979d-b208d5d82c76",
+					"title": "WNBA to hold pre-season game in Edmonton amid reports of Toronto expansion",
+					"body": "The women's basketball league announced on Thursday that it will hold a pre-season game between the Los Angeles Sparks and the Seattle Storm at Edmonton's Rogers Place on May 5. The news comes three days after media reports that Maple Leaf Sports & Entertainment chairman Larry Tanenbaum is pursuing a WNBA franchise in Toronto.\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.",
+					"source": {
+						"uri": "ottawasun.com",
+						"dataType": "news",
+						"title": "Ottawa Sun"
+					},
+					"authors": [
+						{
+							"uri": "canadian_press@ottawasun.com",
+							"name": "Canadian Press",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/smartcdn.gprod.postmedia.digital\/ottawasun\/wp-content\/uploads\/2024\/03\/bkw-wnba-edmonton-20240307.jpg?quality=100&strip=all",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2549019607843137,
+					"wgt": 447562458,
+					"relevance": 1
+				},
+				{
+					"uri": "8017510249",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "23:09:18",
+					"dateTime": "2024-03-07T23:09:18Z",
+					"dateTimePub": "2024-03-07T23:08:51Z",
+					"dataType": "news",
+					"sim": 0.8039215803146362,
+					"url": "https:\/\/www.ocregister.com\/2024\/03\/07\/sparks-to-take-on-seattle-in-preseason-game-in-canada\/",
+					"title": "Sparks to take on Seattle in preseason game in Canada",
+					"body": "LOS ANGELES -- The Sparks and Seattle Storm have long been rivals in the WNBA's Western Conference.\n\nHowever, their shared experience with Canadian star Kia Nurse, a two-time Olympic team member, was one of the primary reasons both teams were selected to participate in this year's WNBA Canada Game.\n\nThe familiar foes will mark new territory together, as the three-time WNBA champion Sparks and the four-time WNBA champion Storm will play in the WNBA Canada game May 5 at Rogers Place in Edmonton, Alberta.\n\n\"A variety of different factors, including those two teams and their ownership being willing to travel and play,\" WNBA commissioner Cathy Engelbert said during a Zoom news conference Wednesday. \"One of them gives up a home game as a result, but it's good to have both of these teams with their rich traditions.\"\n\nThe game will also have several on-court storylines.\n\nThe Sparks, who have not made the playoffs for three consecutive seasons, will face former franchise player Nneka Ogwumike, who recently signed as an unrestricted free agent with the Storm.\n\n\"I know L.A. has struggled in the last couple of years, but they have a rich history in this league, one of the original teams,\" Engelbert said. \"They'll come back to glory, I'm sure.\"\n\nThe matchup will also be an opportunity for the Sparks' No. 2 and No. 4 overall draft picks to play on an international stage, less than three weeks after being selected in the WNBA draft on April 15.\n\n\"For the Sparks, obviously you see they have the No. 2 and No. 4 pick. I think in this draft that's going to be really exciting as we get into the conference championships, NCAA (women's tournament) and as players look to join the WNBA,\" Engelbert said. \"I think it's exciting for them to only after a couple of weeks of practice to show on the court up in Edmonton.\"\n\nNurse, acquired via trade with the Storm, is a native of Hamilton, Ontario. The 6-foot guard is a 2019 All-Star and a key player on the Canadian women's basketball national team that will play in the Paris Olympics this summer.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game,\" Los Angeles Sparks co-owner Magic Johnson said via a statement. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nStorm coach Noelle Quinn, a former Sparks point guard and Los Angeles native, said she's thrilled to be part of the WNBA Canada Game.\n\n\"I've been honored to work with the Canadian senior women's national team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports,\" Quinn said in a statement. \"This game represents the growth of women's basketball both in Canada and on a global stage.\"\n\nLast year's inaugural Canada game featured the Chicago Sky against the Minnesota Lynx in Toronto.",
+					"source": {
+						"uri": "ocregister.com",
+						"dataType": "news",
+						"title": "The Orange County Register"
+					},
+					"authors": [
+						{
+							"uri": "john_w_davis@ocregister.com",
+							"name": "John W. Davis",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/www.ocregister.com\/wp-content\/uploads\/2024\/03\/GettyImages-1496710466.jpg?w=640",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3254901960784313,
+					"wgt": 447548958,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281593156",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "22:45:09",
+					"dateTime": "2024-03-07T22:45:09Z",
+					"dateTimePub": "2024-03-07T22:32:22Z",
+					"dataType": "news",
+					"sim": 0.7254902124404907,
+					"url": "https:\/\/clutchpoints.com\/wnba-news-sparks-storm-host-preseason-showdown-canada",
+					"title": "Sparks-Storm host WNBA preseason showdown in Canada",
+					"body": "The matchup follows the success of last year's inaugural WNBA Canada Game, where the Chicago Sky triumphed over the Minnesota Lynx in Toronto, drawing in record-breaking numbers in terms of broadcast viewership, attendance and merchandise sales across Canada.\n\nThe matchup is not just a testament to the growing popularity of women's basketball but also hints at the potential for WNBA expansion into Canada. WNBA Commissioner Cathy Engelbert highlighted ongoing discussions with interested owners for potential new franchises, eyeing expansion for the 2026 season and beyond, despite confirming Golden State as the only new team for 2025.\n\n\"We continue to spend a lot of time to engage with several interested owners in a number of markets,\" Engelbert sai, per the Associated Press. \"I have no news to report at this time. Any teams would begin in 2026 and beyond.\"\n\nThe Storm, winners of four championships, have made significant moves this offseason, acquiring free agents Nneka Ogwumike and Skylar Diggins-Smith to join a skilled roster featuring Ezi Magbegor and Jewell Loyd. Ogwumike, previously with the Sparks for her entire career, departed to become a free agent this year.\n\nThe game is anticipated to be a showcase of talent and a celebration of Canadian basketball, highlighted by the return of Kia Nurse, a Canadian guard for the Sparks, to her home crowd.\n\n\"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S.,\" Los Angeles Sparks co-owner Magic Johnson said in a statement. \"Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nThe excitement around the game is palpable, with expectations of a sellout crowd eager to witness the WNBA's best in action. The game also marks the fourth WNBA preseason game to be played outside of the U.S., including previous matches in Manchester, England (2011) and Monterrey, Mexico (2004).\n\nEngelbert also mentioned the possibility of hosting regular-season games internationally, although such plans would have to accommodate the league's schedule around international competitions.\n\n\"It's something we're thinking about for the future,\" she said. \"We'll be looking at it in years we don't have international competitions to interrupt the season.\"",
+					"source": {
+						"uri": "clutchpoints.com",
+						"dataType": "news",
+						"title": "ClutchPoints"
+					},
+					"authors": [
+						{
+							"uri": "erin_achenbach@clutchpoints.com",
+							"name": "Erin Achenbach",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/wp.clutchpoints.com\/wp-content\/uploads\/2024\/03\/wnba-news-sparks-storm-host-preseason-showdown-in-canada.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3490196078431373,
+					"wgt": 447547509,
+					"relevance": 1
+				},
+				{
+					"uri": "8017355284",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:37:19",
+					"dateTime": "2024-03-07T20:37:19Z",
+					"dateTimePub": "2024-03-07T20:36:52Z",
+					"dataType": "news",
+					"sim": 0.7843137383460999,
+					"url": "https:\/\/theprint.in\/sport\/basketball-canada-to-host-wnba-pre-season-game-in-edmonton\/1992729\/",
+					"title": "Basketball-Canada to host WNBA pre-season game in Edmonton",
+					"body": "\"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada,\" WNBA Commissioner Cathy Engelbert said in a news release.\n\nThe announcement of the Edmonton game comes amid recent reports this week that Canadian businessman Larry Tanenbaum is pursuing a WNBA expansion team for Toronto.\n\nThe Edmonton game will mark only the fourth WNBA exhibition held outside the United States, following last year's game in Toronto and games in Monterrey, Mexico, and Manchester, England, that were held in 2004 and 2011, respectively.\n\nAmong those on the current roster of the three-time WNBA champion Sparks is recently acquired Canadian standout Kia Nurse, while the four-time champion Storm boast 2023 league scoring leader Jewell Loyd among their players.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans,\" said Sparks Co-Owner and Basketball Hall of Famer Magic Johnson.\n\n\"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm!\"\n\n(Reporting by Frank Pingue in Toronto, editing by Pritha Sarkar)",
+					"source": {
+						"uri": "theprint.in",
+						"dataType": "news",
+						"title": "ThePrint"
+					},
+					"authors": [
+						{
+							"uri": "reuters@theprint.in",
+							"name": "Reuters",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": null,
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3098039215686275,
+					"wgt": 447539839,
+					"relevance": 1
+				},
+				{
+					"uri": "8017324168",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:21:15",
+					"dateTime": "2024-03-07T20:21:15Z",
+					"dateTimePub": "2024-03-07T20:09:02Z",
+					"dataType": "news",
+					"sim": 0.8078431487083435,
+					"url": "https:\/\/www.dailymail.co.uk\/wires\/reuters\/article-13170581\/Basketball-Canada-host-WNBA-pre-season-game-Edmonton.html",
+					"title": "Basketball-Canada to host WNBA pre-season game in Edmonton",
+					"body": "March 7 (Reuters) - Canada will host a Women's National Basketball Association pre-season game for a second consecutive year as the Los Angeles Sparks will face the Seattle Storm in Edmonton on May 5, the league said on Thursday.\n\nThe exhibition, which is designed to grow the popularity of the league outside the United States, will be played about a year after the inaugural WNBA Canada Game was held in Toronto in front of a sold-out crowd\n\n\"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada,\" WNBA Commissioner Cathy Engelbert said in a news release.\n\nThe announcement of the Edmonton game comes amid recent reports this week that Canadian businessman Larry Tanenbaum is pursuing a WNBA expansion team for Toronto.\n\nThe Edmonton game will mark only the fourth WNBA exhibition held outside the United States, following last year's game in Toronto and games in Monterrey, Mexico, and Manchester, England, that were held in 2004 and 2011, respectively.\n\nAmong those on the current roster of the three-time WNBA champion Sparks is recently acquired Canadian standout Kia Nurse, while the four-time champion Storm boast 2023 league scoring leader Jewell Loyd among their players.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans,\" said Sparks Co-Owner and Basketball Hall of Famer Magic Johnson.\n\n\"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm!\" (Reporting by Frank Pingue in Toronto, editing by Pritha Sarkar)",
+					"source": {
+						"uri": "dailymail.co.uk",
+						"dataType": "news",
+						"title": "Daily Mail Online"
+					},
+					"authors": [],
+					"image": null,
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3725490196078431,
+					"wgt": 447538875,
+					"relevance": 1
+				},
+				{
+					"uri": "8017330136",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:14:29",
+					"dateTime": "2024-03-07T20:14:29Z",
+					"dateTimePub": "2024-03-07T20:14:04Z",
+					"dataType": "news",
+					"sim": 0.8196078538894653,
+					"url": "https:\/\/www.devdiscourse.com\/article\/sports-games\/2852300-basketball-canada-to-host-wnba-pre-season-game-in-edmonton",
+					"title": "Basketball-Canada to host WNBA pre-season game in Edmonton | Sports-Games",
+					"body": "The exhibition, which is designed to grow the popularity of the league outside the United States, will be played about a year after the inaugural WNBA Canada Game was held in Toronto in front of a sold-out crowd \"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada,\" WNBA Commissioner Cathy Engelbert said in a news release.\n\nCanada will host a Women's National Basketball Association pre-season game for a second consecutive year as the Los Angeles Sparks will face the Seattle Storm in Edmonton on May 5, the league said on Thursday. The exhibition, which is designed to grow the popularity of the league outside the United States, will be played about a year after the inaugural WNBA Canada Game was held in Toronto in front of a sold-out crowd\n\n\"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada,\" WNBA Commissioner Cathy Engelbert said in a news release. The announcement of the Edmonton game comes amid recent reports this week that Canadian businessman Larry Tanenbaum is pursuing a WNBA expansion team for Toronto.\n\nThe Edmonton game will mark only the fourth WNBA exhibition held outside the United States, following last year's game in Toronto and games in Monterrey, Mexico, and Manchester, England, that were held in 2004 and 2011, respectively. Among those on the current roster of the three-time WNBA champion Sparks is recently acquired Canadian standout Kia Nurse, while the four-time champion Storm boast 2023 league scoring leader Jewell Loyd among their players.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans,\" said Sparks Co-Owner and Basketball Hall of Famer Magic Johnson. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm!\"\n\n(This story has not been edited by Devdiscourse staff and is auto-generated from a syndicated feed.)",
+					"source": {
+						"uri": "devdiscourse.com",
+						"dataType": "news",
+						"title": "Devdiscourse"
+					},
+					"authors": [],
+					"image": "https:\/\/www.devdiscourse.com\/remote.axd?https:\/\/devdiscourse.blob.core.windows.net\/imagegallery\/16_01_2019_13_05_02_5451348.jpg?width=920&format=jpeg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3725490196078431,
+					"wgt": 447538469,
+					"relevance": 1
+				},
+				{
+					"uri": "8017321858",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:08:28",
+					"dateTime": "2024-03-07T20:08:28Z",
+					"dateTimePub": "2024-03-07T20:07:21Z",
+					"dataType": "news",
+					"sim": 0.8509804010391235,
+					"url": "https:\/\/www.orilliamatters.com\/national-sports\/wnba-to-hold-pre-season-game-in-edmonton-on-may-5-amid-reports-of-toronto-expansion-8411782",
+					"title": "WNBA to hold pre-season game in Edmonton on May 5 amid reports of Toronto expansion",
+					"body": "The WNBA is coming back to Canada, just maybe not in the way people had expected.\n\nThe women's basketball league announced on Thursday that it will hold a pre-season game between the Los Angeles Sparks and the Seattle Storm at Edmonton's Rogers Place on May 5. The news comes three days after media reports that Maple Leaf Sports & Entertainment chairman Larry Tanenbaum is pursuing a WNBA franchise in Toronto.\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\n\n\"I get chills still thinking of that vibe last year, so from an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, and player experience.\"\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe contest in Edmonton will be the fourth WNBA pre-season game held outside the United States, with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nThe four-time WNBA champion Storm currently boasts 2023 league scoring leader and All-Star Game MVP Jewell Loyd. The Sparks, meanwhile, feature Canadian national team star Kia Nurse, whose brother Darnell regularly performs at Rogers Place as a blueliner with the Edmonton Oilers.\n\nEngelbert said that Edmonton was a logical choice to host the second WNBA Canada Game because of the city's rich sporting history, with the NHL's Oilers and CFL's Elks having passionate support, and the historical success of the Edmonton Grads, an amateur women's basketball team that maintained an astonishing 95 per cent winning percentage from 1915 to 1940.\n\nShe also pointed to the success of an NBA exhibition game between the Toronto Raptors and Utah Jazz in 2022 as an indicator of how successful a pro basketball game in Edmonton could be.\n\n\"They sold out in eight minutes at Rogers Place,\" said Engelbert. \"I think the venue proved to be fantastic and the fan base continues to grow there.\n\n\"We'll continue to look at other cities as well, but certainly was I impressed with everything Edmonton has to offer.\"\n\nTanenbaum is reportedly in pursuit of a WNBA team through his holding company Kilmer Group.\n\nKilmer Sports Venture appointed longtime European soccer executive Ivan Gazidis to lead the new organization on Tuesday. The venture will look for sports and entertainment opportunities around the world. Gazidis has served as CEO for both AC Milan and Arsenal and was one of the founders of Major League Soccer.\n\nMedia reports say that Teresa Resch, the former Raptors vice-president of basketball operations and player development, will be a part of the initiative.\n\nThe Golden State Warriors were awarded a WNBA franchise for 2025 back in October, the first expansion team since 2008 and the 13th team in the league. Engelbert clarified in her video conference that the new San Francisco-area team will be the only addition to the WNBA in 2025 and that earliest a team could be awarded to Toronto -- or anywhere -- is in 2026.\n\n\"No specific timeline, because as soon as I give a timeline and things obviously change, it becomes kind of yesterday's news,\" said Engelbert. \"I've always said I think about 18 months out is when you need to essentially finalize things because you have to start working on a brand, Nike has to start to produce uniforms, things like that.\"\n\nFollow @jchidleyhill on X.\n\nThis report by The Canadian Press was first published March 6, 2024.\n\nJohn Chidley-Hill, The Canadian Press",
+					"source": {
+						"uri": "orilliamatters.com",
+						"dataType": "news",
+						"title": "OrilliaMatters.com"
+					},
+					"authors": [],
+					"image": "https:\/\/www.vmcdn.ca\/f\/files\/shared\/feeds\/cp\/2024\/03\/2024030714030-65ea0edca5171285253b6050jpeg.jpg;w=650;h=579;mode=crop",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2941176470588236,
+					"wgt": 447538108,
+					"relevance": 1
+				},
+				{
+					"uri": "8017322128",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:08:02",
+					"dateTime": "2024-03-07T20:08:02Z",
+					"dateTimePub": "2024-03-07T20:07:34Z",
+					"dataType": "news",
+					"sim": 0.8274509906768799,
+					"url": "https:\/\/www.thepeterboroughexaminer.com\/sports\/basketball\/wnba-to-hold-pre-season-game-in-edmonton-on-may-5-amid-reports-of-toronto\/article_ec95070a-bc7f-5896-8497-022658cd203d.html",
+					"title": "WNBA to hold pre-season game in Edmonton on May 5 amid reports of Toronto expansion",
+					"body": "The WNBA is coming back to Canada, just maybe not in the way people had expected.\n\nThe women's basketball league announced on Thursday that it will hold a pre-season game between the Los Angeles Sparks and the Seattle Storm at Edmonton's Rogers Place on May 5. The news comes three days after media reports that Maple Leaf Sports & Entertainment chairman Larry Tanenbaum is pursuing a WNBA franchise in Toronto.\n\n×\n\nAlready a Subscriber? Sign in You are logged in Switch accounts\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\nARTICLE CONTINUES BELOW\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\n\n\"I get chills still thinking of that vibe last year, so from an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, and player experience.\"\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe contest in Edmonton will be the fourth WNBA pre-season game held outside the United States, with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nARTICLE CONTINUES BELOW\n\nEngelbert said that Edmonton was a logical choice to host the second WNBA Canada Game because of the city's rich sporting history, with the NHL's Oilers and CFL's Elks having passionate support, and the historical success of the Edmonton Grads, an amateur women's basketball team that maintained an astonishing 95 per cent winning percentage from 1915 to 1940.\n\nYou might be interested in Peterborough And Area News Dec 31, 1969 Peterborough And Area News Dec 31, 1969\n\nShe also pointed to the success of an NBA exhibition game between the Toronto Raptors and Utah Jazz in 2022 as an indicator of how successful a pro basketball game in Edmonton could be.\n\n\"They sold out in eight minutes at Rogers Place,\" said Engelbert. \"I think the venue proved to be fantastic and the fan base continues to grow there.\n\n\"We'll continue to look at other cities as well, but certainly was I impressed with everything Edmonton has to offer.\"\n\nTanenbaum is reportedly in pursuit of a WNBA team through his holding company Kilmer Group.\n\nKilmer Sports Venture appointed longtime European soccer executive Ivan Gazidis to lead the new organization on Tuesday. The venture will look for sports and entertainment opportunities around the world. Gazidis has served as CEO for both AC Milan and Arsenal and was one of the founders of Major League Soccer.\n\nMedia reports say that Teresa Resch, the former Raptors vice-president of basketball operations and player development, will be a part of the initiative.\n\nARTICLE CONTINUES BELOW\n\nThe Golden State Warriors were awarded a WNBA franchise for 2025 back in October, the first expansion team since 2008 and the 13th team in the league. Engelbert clarified in her video conference that the new San Francisco-area team will be the only addition to the WNBA in 2025 and that earliest a team could be awarded to Toronto -- or anywhere -- is in 2026.\n\n\"No specific timeline, because as soon as I give a timeline and things obviously change, it becomes kind of yesterday's news,\" said Engelbert. \"I've always said I think about 18 months out is when you need to essentially finalize things because you have to start working on a brand, Nike has to start to produce uniforms, things like that.\"\n\nFollow @jchidleyhill on X.\n\nThis report by The Canadian Press was first published March 6, 2024.",
+					"source": {
+						"uri": "thepeterboroughexaminer.com",
+						"dataType": "news",
+						"title": "thepeterboroughexaminer.com"
+					},
+					"authors": [],
+					"image": "https:\/\/bloximages.chicago2.vip.townnews.com\/thepeterboroughexaminer.com\/content\/tncms\/assets\/v3\/editorial\/f\/4a\/f4a7789a-2852-5f98-9747-c8ce9c9d939e\/65ea1666ab4ce.image.jpg?crop=1150%2C604%2C0%2C210&resize=438%2C230&order=crop%2Cresize",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.223529411764706,
+					"wgt": 447538082,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281482629",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:06:57",
+					"dateTime": "2024-03-07T20:06:57Z",
+					"dateTimePub": "2024-03-07T19:37:22Z",
+					"dataType": "news",
+					"sim": 0.7568627595901489,
+					"url": "https:\/\/www.aol.com\/wnba-host-2nd-preseason-game-193722534.html",
+					"title": "WNBA will host 2nd preseason game in Canada as expansion to country gains steam",
+					"body": "The WNBA will host a preseason game in Canada for the second consecutive season while it continues its expansion quest that could lead it back to the country full time.\n\nThe Los Angeles Sparks and Seattle Storm will play at Rogers Place in Edmonton, Alberta, on May 5 ahead of the WNBA's 28th season, the league announced Thursday. It will be the fourth preseason game held outside the United States after Toronto; Manchester, England, in 2011; and Monterrey, Mexico, in 2004 in the WNBA's road toward globalization. Toronto is also on the short list for an expansion team.\n\nWNBA commissioner Cathy Engelbert said the league returned to Canada because interest in women's basketball continues to increase there, including a 32% year-over-year TV viewership jump for WNBA games. Regular season viewership was up 95% from 2020-23.\n\n\"Bringing the game to Canada, I think, will have an enormous impact,\" Engelbert said in a video call with reporters. \"I think it did last year, based on what we've heard and what our NBA Canada team continues to hear. And that's why we're coming again because we want to impact this game globally, not just here in the U.S.\"\n\nThe league chose Edmonton for its \"incredible history\" supporting professional sports, its \"rich ties\" to women's basketball -- namely the highly successful Edmonton Grads team of the early 1900s -- and the success of the 2022 NBA Canada Series game at Rogers Place between the Raptors and Utah Jazz, Engelbert said.\n\n\"We'll continue to look at other cities as well but certainly was impressed with what everything Edmonton has to offer,\" she said.\n\nThe announcement comes the same week as new reports of a bid for the WNBA to expand to Toronto. CBC Sports reported Monday billionaire Larry Tanenbaum is pursuing a team through his holding company, the Kilmer Group. Tanenbaum was part of a bid with Maple Leaf Sports & Entertainment, which owns the NHL's Maple Leafs and NBA's Raptors, that fell apart in October. He is the minority owner and chairman of MLSE. If successful, it would be the first WNBA team outside of the United States.\n\nThe group is expected to meet with WNBA leadership about the bid and an announcement could come as soon as May, CBC Sports reported. Engelbert told reporters that future expansion teams would not begin play until 2026 or beyond.\n\n\"We continue to spend a lot of time and engage in very productive conversations with several interested ownership groups in a number of cities and markets,\" Engelbert said. \"[We] have no news to report at this time.\"\n\nThe league awarded its 13th team, and the first expansion team since 2008, to Golden State Warriors owners Joe Lacob and Peter Guber in October. The Bay Area team will begin play in 2025. At the time of that announcement, Engelbert said she expected to add a 14th team by 2025 and mentioned several candidates: Sacramento, Portland, Denver, Toronto and Philadelphia. The league has targeted adding two teams since May 2022.\n\nThe 2023 preseason game in Toronto was proof of concept for fan support of expansion. Tickets nearly sold out within minutes and the crowd of 19,800 delivered an enthusiastic environment for the Chicago Sky's win over the Minnesota Lynx. Merchandise sold out by halftime and fans waved signs urging the league to bring a team to their city. It set records for TV viewership, attendance and merchandise sales in Canada, the league said. One T-shirt for sale read, \"Women's basketball belongs in the North.\"\n\nNo matter the location, an initial expansion team in Canada would draw fandom from across the country as \"Canada's team,\" similar to the Raptors' situation. The net of potential sponsorship opportunities would also be country-wide, unlike the case for expansion opportunities in the U.S. Testing the waters in Edmonton will provide evidence of how wide fandom is for Canadian expansion.\n\n\"I look at a lot of data about the market and kind of our typical WNBA fan, but how can we grow that fan base and other fan segments?\" Engelbert said. \"And certainly Toronto did great on that last year.\"\n\nInterest and participation in the sport continues to grow in Canada on both the women's and men's side over the past two decades. The Canadian women's national team, which features four WNBA players and is based in Edmonton, is ranked No. 5 in the world and qualified for the 2024 Paris Olympics.\n\n\"The league coming here to Canada again is a sign of the importance we see in continuing to globalize our game, bringing the WNBA to a worldwide global platform [and] possibly to other countries in the future,\" Engelbert said.\n\nKia Nurse, one of the nation's most recognizable basketball stars, will play in the Edmonton preseason game after joining the Sparks from the Storm in free agency. Aaliyah Edwards, a 6-foot-3 senior forward at UConn, could join her in the game as well. The Canadian national pool player is a projected lottery pick if she chooses to enter April's draft. The Sparks have the No. 2 and No. 4 picks.\n\nThe rest of WNBA's active Canadian team players are Bridget Carleton (Lynx), Natalie Achonwa (free agent, formerly Lynx) and Laeticia Amihere (Atlanta Dream). Engelbert said approximately 20% of WNBA players rostered last season were international.",
+					"source": {
+						"uri": "aol.com",
+						"dataType": "news",
+						"title": "Aol"
+					},
+					"authors": [
+						{
+							"uri": "cassandra_negley@aol.com",
+							"name": "Cassandra Negley",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/s.yimg.com\/ny\/api\/res\/1.2\/pGwNrcDhv2CkReHxckY5ZA--\/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MjE-\/https:\/\/media.zenfs.com\/en\/aol_yahoo_sports_800\/d4b14c270e85d899df169c9cd06989bf",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.192156862745098,
+					"wgt": 447538017,
+					"relevance": 1
+				},
+				{
+					"uri": "8017315124",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:02:12",
+					"dateTime": "2024-03-07T20:02:12Z",
+					"dateTimePub": "2024-03-07T20:01:36Z",
+					"dataType": "news",
+					"sim": 0.7764706015586853,
+					"url": "https:\/\/www.thestar.com\/sports\/basketball\/wnba-to-hold-pre-season-game-in-edmonton-on-may-5-amid-reports-of-toronto\/article_d6cd3cc6-e669-5647-9ae4-04c66f840a5b.html",
+					"title": "WNBA to hold pre-season game in Edmonton on May 5 amid reports of Toronto expansion",
+					"body": "The WNBA is coming back to Canada, just maybe not in the way people had expected.\n\nThe women's basketball league announced on Thursday that it will hold a pre-season game between the Los Angeles Sparks and the Seattle Storm at Edmonton's Rogers Place on May 5. The news comes three days after media reports that Maple Leaf Sports & Entertainment chairman Larry Tanenbaum is pursuing a WNBA franchise in Toronto.\n\n×\n\nAlready a Subscriber? Sign in You are logged in Switch accounts\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\nARTICLE CONTINUES BELOW ARTICLE CONTINUES BELOW\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\n\n\"I get chills still thinking of that vibe last year, so from an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, and player experience.\"\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe contest in Edmonton will be the fourth WNBA pre-season game held outside the United States, with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nEngelbert said that Edmonton was a logical choice to host the second WNBA Canada Game because of the city's rich sporting history, with the NHL's Oilers and CFL's Elks having passionate support, and the historical success of the Edmonton Grads, an amateur women's basketball team that maintained an astonishing 95 per cent winning percentage from 1915 to 1940.\n\nYou might be interested in Breaking News Headlines & Top Stories | The Star Dec 31, 1969 Comments Breaking News Headlines & Top Stories | The Star Dec 31, 1969 Comments\n\nShe also pointed to the success of an NBA exhibition game between the Toronto Raptors and Utah Jazz in 2022 as an indicator of how successful a pro basketball game in Edmonton could be.\n\n\"They sold out in eight minutes at Rogers Place,\" said Engelbert. \"I think the venue proved to be fantastic and the fan base continues to grow there.\n\nARTICLE CONTINUES BELOW\n\n\"We'll continue to look at other cities as well, but certainly was I impressed with everything Edmonton has to offer.\"\n\nTanenbaum is reportedly in pursuit of a WNBA team through his holding company Kilmer Group.\n\nKilmer Sports Venture appointed longtime European soccer executive Ivan Gazidis to lead the new organization on Tuesday. The venture will look for sports and entertainment opportunities around the world. Gazidis has served as CEO for both AC Milan and Arsenal and was one of the founders of Major League Soccer.\n\nMedia reports say that Teresa Resch, the former Raptors vice-president of basketball operations and player development, will be a part of the initiative.\n\nThe Golden State Warriors were awarded a WNBA franchise for 2025 back in October, the first expansion team since 2008 and the 13th team in the league. Engelbert clarified in her video conference that the new San Francisco-area team will be the only addition to the WNBA in 2025 and that earliest a team could be awarded to Toronto -- or anywhere -- is in 2026.\n\n\"No specific timeline, because as soon as I give a timeline and things obviously change, it becomes kind of yesterday's news,\" said Engelbert. \"I've always said I think about 18 months out is when you need to essentially finalize things because you have to start working on a brand, Nike has to start to produce uniforms, things like that.\"\n\nFollow @jchidleyhill on X.\n\nARTICLE CONTINUES BELOW\n\nThis report by The Canadian Press was first published March 6, 2024.\n\nRead more NCAA basketball at thestar.com",
+					"source": {
+						"uri": "thestar.com",
+						"dataType": "news",
+						"title": "The Star"
+					},
+					"authors": [],
+					"image": "https:\/\/bloximages.chicago2.vip.townnews.com\/thestar.com\/content\/tncms\/assets\/v3\/editorial\/c\/0a\/c0a1e038-607f-58ea-badc-b82eaae1e16b\/65ea14a0e61bc.image.jpg?crop=1150%2C604%2C0%2C210&resize=438%2C230&order=crop%2Cresize",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.223529411764706,
+					"wgt": 447537732,
+					"relevance": 1
+				},
+				{
+					"uri": "8017313854",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "20:01:14",
+					"dateTime": "2024-03-07T20:01:14Z",
+					"dateTimePub": "2024-03-07T20:00:33Z",
+					"dataType": "news",
+					"sim": 0.7764706015586853,
+					"url": "https:\/\/medicinehatnews.com\/sports\/national-sports\/2024\/03\/07\/wnba-to-hold-preseason-game-in-edmonton-on-may-5-amid-reports-of-toronto-expansion\/",
+					"title": "WNBA to hold pre-season game in Edmonton on May 5 amid reports of Toronto expansion - Medicine Hat News",
+					"body": "The WNBA is coming back to Canada, just maybe not in the way people had expected.\n\nThe women's basketball league announced on Thursday that it will hold a pre-season game between the Los Angeles Sparks and the Seattle Storm at Edmonton's Rogers Place on May 5. The news comes three days after media reports that Maple Leaf Sports & Entertainment chairman Larry Tanenbaum is pursuing a WNBA franchise in Toronto.\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\n\n\"I get chills still thinking of that vibe last year, so from an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, and player experience.\"\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe contest in Edmonton will be the fourth WNBA pre-season game held outside the United States, with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nEngelbert said that Edmonton was a logical choice to host the second WNBA Canada Game because of the city's rich sporting history, with the NHL's Oilers and CFL's Elks having passionate support, and the historical success of the Edmonton Grads, an amateur women's basketball team that maintained an astonishing 95 per cent winning percentage from 1915 to 1940.\n\nShe also pointed to the success of an NBA exhibition game between the Toronto Raptors and Utah Jazz in 2022 as an indicator of how successful a pro basketball game in Edmonton could be.\n\n\"They sold out in eight minutes at Rogers Place,\" said Engelbert. \"I think the venue proved to be fantastic and the fan base continues to grow there.\n\n\"We'll continue to look at other cities as well, but certainly was I impressed with everything Edmonton has to offer.\"\n\nTanenbaum is reportedly in pursuit of a WNBA team through his holding company Kilmer Group.\n\nKilmer Sports Venture appointed longtime European soccer executive Ivan Gazidis to lead the new organization on Tuesday. The venture will look for sports and entertainment opportunities around the world. Gazidis has served as CEO for both AC Milan and Arsenal and was one of the founders of Major League Soccer.\n\nMedia reports say that Teresa Resch, the former Raptors vice-president of basketball operations and player development, will be a part of the initiative.\n\nThe Golden State Warriors were awarded a WNBA franchise for 2025 back in October, the first expansion team since 2008 and the 13th team in the league. Engelbert clarified in her video conference that the new San Francisco-area team will be the only addition to the WNBA in 2025 and that earliest a team could be awarded to Toronto - or anywhere - is in 2026.\n\n\"No specific timeline, because as soon as I give a timeline and things obviously change, it becomes kind of yesterday's news,\" said Engelbert. \"I've always said I think about 18 months out is when you need to essentially finalize things because you have to start working on a brand, Nike has to start to produce uniforms, things like that.\"\n\nFollow @jchidleyhill on X.\n\nThis report by The Canadian Press was first published March 6, 2024.",
+					"source": {
+						"uri": "medicinehatnews.com",
+						"dataType": "news",
+						"title": "Medicine Hat News"
+					},
+					"authors": [
+						{
+							"uri": "canadian_press@medicinehatnews.com",
+							"name": "Canadian Press",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/medicinehatnews.com\/wp-content\/uploads\/cp\/2024030714030-65ea0edca5171285253b6050jpeg.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2941176470588236,
+					"wgt": 447537674,
+					"relevance": 1
+				},
+				{
+					"uri": "8017311226",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:58:54",
+					"dateTime": "2024-03-07T19:58:54Z",
+					"dateTimePub": "2024-03-07T19:58:26Z",
+					"dataType": "news",
+					"sim": 0.6745098233222961,
+					"url": "https:\/\/nationalpost.com\/pmn\/sports-pmn\/wnba-to-hold-pre-season-game-in-edmonton-on-may-5-amid-reports-of-toronto-expansion",
+					"title": "WNBA to hold pre-season game in Edmonton on May 5 amid reports of Toronto expansion",
+					"body": "If you are a Home delivery print subscriber, unlimited online access is included in your subscription. Activate your Online Access Now\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\n\"We were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a video conference. \"Globalizing the game is an important part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\n\n\"I get chills still thinking of that vibe last year, so from an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, and player experience.\"\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe contest in Edmonton will be the fourth WNBA pre-season game held outside the United States, with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.",
+					"source": {
+						"uri": "nationalpost.com",
+						"dataType": "news",
+						"title": "National Post"
+					},
+					"authors": [],
+					"image": "https:\/\/smartcdn.gprod.postmedia.digital\/nationalpost\/wp-content\/uploads\/2024\/03\/cdc69ec4bd8a47f4b9e50a2844a027df-the-associated-press.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.3176470588235294,
+					"wgt": 447537534,
+					"relevance": 1
+				},
+				{
+					"uri": "8017302902",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:52:03",
+					"dateTime": "2024-03-07T19:52:03Z",
+					"dateTimePub": "2024-03-07T19:51:32Z",
+					"dataType": "news",
+					"sim": 0.7372549176216125,
+					"url": "https:\/\/sportsnaut.com\/sparks-storm-headed-to-edmonton-for-preseason-game\/",
+					"title": "Sparks, Storm headed to Edmonton for preseason game",
+					"body": "The WNBA is returning to Canada for its second exhibition game in the country, sending the Los Angeles Sparks and Seattle Storm to Edmonton on May 5.\n\nThe Sparks and Storm will play a preseason game at the home of the NHL's Edmonton Oilers, Rogers Place.\n\nLast year, the Chicago Sky beat the Minnesota Lynx 82-74 in a preseason game in Toronto. The game sold out and set records for broadcast viewership in the country, according to the WNBA.\n\nThe league's return to Canada comes on the heels of reports that the chairman of Maple Leaf Sports & Entertainment, parent company of the NHL's Maple Leafs and NBA's Raptors, is pursuing a WNBA expansion team.\n\nThe Sparks recently traded with the Storm to acquire Kia Nurse, who hails from Hamilton, Ontario.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm,\" Sparks co-owner Magic Johnson said in a news release. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"",
+					"source": {
+						"uri": "sportsnaut.com",
+						"dataType": "news",
+						"title": "Sportsnaut.com"
+					},
+					"authors": [],
+					"image": "https:\/\/sportsnaut.com\/wp-content\/uploads\/2024\/03\/21153503.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1764705882352942,
+					"wgt": 447537123,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281463328",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:43:45",
+					"dateTime": "2024-03-07T19:43:45Z",
+					"dateTimePub": "2024-03-07T19:23:40Z",
+					"dataType": "news",
+					"sim": 0.7882353067398071,
+					"url": "https:\/\/www.tricitynews.com\/national-sports\/wnba-to-hold-pre-season-game-between-sparks-and-storm-in-edmonton-on-may-5-8411796",
+					"title": "WNBA to hold pre-season game between Sparks and Storm in Edmonton on May 5",
+					"body": "The WNBA is coming back to Canada for a pre-season game in Edmonton. The Los Angeles Sparks will face the Seattle Storm on May 5 at Rogers Place.\n\nThe WNBA is coming back to Canada for a pre-season game in Edmonton.\n\nThe Los Angeles Sparks will face the Seattle Storm on May 5 at Rogers Place.\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\nThe game in Edmonton will be the fourth WNBA pre-season held outside the United States with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe four-time WNBA champion Storm currently features 2023 league scoring leader and All-Star Game MVP Jewell Loyd.\n\nThis report by The Canadian Press was first published March 6, 2024.\n\nThe Canadian Press",
+					"source": {
+						"uri": "tricitynews.com",
+						"dataType": "news",
+						"title": "Tri-City News"
+					},
+					"authors": [
+						{
+							"uri": "canadian_press@tricitynews.com",
+							"name": "Canadian Press",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/www.vmcdn.ca\/f\/files\/shared\/feeds\/cp\/2024\/03\/2024030714030-65ea0edca5171285253b6050jpeg.jpg;w=650;h=579;mode=crop",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1058823529411765,
+					"wgt": 447536625,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281461742",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:41:55",
+					"dateTime": "2024-03-07T19:41:55Z",
+					"dateTimePub": "2024-03-07T19:11:28Z",
+					"dataType": "news",
+					"sim": 0.8352941274642944,
+					"url": "https:\/\/www.register-herald.com\/sports\/national_sports\/wnba-to-play-preseason-game-in-canada-for-second-straight-year\/article_e31d8c4e-3c6c-5f96-a786-d55e675d1b78.html",
+					"title": "WNBA to play preseason game in Canada for second straight year",
+					"body": "The WNBA will play a preseason game in Canada for the second consecutive year with the Los Angeles Sparks facing the Seattle Storm on May 5 in Edmonton, Alberta.\n\nThe inaugural WNBA Canada Game last season saw the Chicago Sky beat the Minnesota Lynx in front of a sold out crowd in Toronto. That preseason game set records for broadcast viewership, attendance and merchandise sales in Canada.\n\nToronto is one of the cities that is under consideration for WNBA expansion if the right ownership group can be found. WNBA Commissioner Cathy Engelbert stated on a conference call that Golden State would be the only expansion team for 2025, but that they were hoping for more franchises for the 2026 season.\n\n\"We continue to spend a lot of time to engage with several interested owners in a number of markets,\" she said. \"I have no news to report at this time. Any teams would begin in 2026 and beyond.\"\n\nThe four-time champion Seattle Storm have had a big offseason, adding free agents Nneka Ogwumike and Skylar Diggins-Smith to a talented group that includes Ezi Magbegor and Jewell Loyd. Ogwumike had spent her entire career with the Sparks before she left as a free agent this year.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game,\" Los Angeles Sparks co-owner Magic Johnson said in a statement. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nThis will be the fourth WNBA preseason game outside of the U.S. There were also games in Manchester, England (2011) and Monterrey, Mexico (2004).\n\nEngelbert said that the league would consider playing a regular-season game outside of the U.S., although it would have to be at the right time, most likely not an Olympic year.\n\n\"It's something we're thinking about for the future,\" she said. \"We'll be looking at it in years we don't have international competitions to interrupt the season.\"\n\nAP WNBA: https:\/\/apnews.com\/hub\/wnba-basketball",
+					"source": {
+						"uri": "register-herald.com",
+						"dataType": "news",
+						"title": "Beckley Register-Herald"
+					},
+					"authors": [
+						{
+							"uri": "doug_feinberg@register-herald.com",
+							"name": "Doug Feinberg",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/bloximages.chicago2.vip.townnews.com\/register-herald.com\/content\/tncms\/custom\/image\/b87268c4-7873-11e7-af9a-f3a04545878a.jpg?resize=200%2C200",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2549019607843137,
+					"wgt": 447536515,
+					"relevance": 1
+				},
+				{
+					"uri": "8017290137",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:40:58",
+					"dateTime": "2024-03-07T19:40:58Z",
+					"dateTimePub": "2024-03-07T19:40:27Z",
+					"dataType": "news",
+					"sim": 0.8784313797950745,
+					"url": "https:\/\/www.thepeterboroughexaminer.com\/sports\/basketball\/wnba-to-play-preseason-game-in-canada-for-second-straight-year\/article_06696b2c-06d2-5c1a-af42-bdd6ff041233.html",
+					"title": "WNBA to play preseason game in Canada for second straight year",
+					"body": "The WNBA will play a preseason game in Canada for the second consecutive year with the Los Angeles Sparks facing the Seattle Storm on May 5 in Edmonton, Alberta.\n\nThe inaugural WNBA Canada Game last season saw the Chicago Sky beat the Minnesota Lynx in front of a sold out crowd in Toronto. That preseason game set records for broadcast viewership, attendance and merchandise sales in Canada.\n\n×\n\nAlready a Subscriber? Sign in You are logged in Switch accounts\n\nToronto is one of the cities that is under consideration for WNBA expansion if the right ownership group can be found. WNBA Commissioner Cathy Engelbert stated on a conference call that Golden State would be the only expansion team for 2025, but that they were hoping for more franchises for the 2026 season.\n\nARTICLE CONTINUES BELOW\n\n\"We continue to spend a lot of time to engage with several interested owners in a number of markets,\" she said. \"I have no news to report at this time. Any teams would begin in 2026 and beyond.\"\n\nThe four-time champion Seattle Storm have had a big offseason, adding free agents Nneka Ogwumike and Skylar Diggins-Smith to a talented group that includes Ezi Magbegor and Jewell Loyd. Ogwumike had spent her entire career with the Sparks before she left as a free agent this year.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game,\" Los Angeles Sparks co-owner Magic Johnson said in a statement. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nThis will be the fourth WNBA preseason game outside of the U.S. There were also games in Manchester, England (2011) and Monterrey, Mexico (2004).\n\nARTICLE CONTINUES BELOW\n\nEngelbert said that the league would consider playing a regular-season game outside of the U.S., although it would have to be at the right time, most likely not an Olympic year.\n\nYou might be interested in Peterborough And Area News Dec 31, 1969 Peterborough And Area News Dec 31, 1969\n\n\"It's something we're thinking about for the future,\" she said. \"We'll be looking at it in years we don't have international competitions to interrupt the season.\"\n\n___\n\nAP WNBA: https:\/\/apnews.com\/hub\/wnba-basketball",
+					"source": {
+						"uri": "thepeterboroughexaminer.com",
+						"dataType": "news",
+						"title": "thepeterboroughexaminer.com"
+					},
+					"authors": [],
+					"image": "https:\/\/bloximages.chicago2.vip.townnews.com\/thepeterboroughexaminer.com\/content\/tncms\/custom\/image\/c7910cd6-fbf6-11ed-943a-477f8589b241.png?resize=600%2C600",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2156862745098038,
+					"wgt": 447536458,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281458481",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:36:54",
+					"dateTime": "2024-03-07T19:36:54Z",
+					"dateTimePub": "2024-03-07T19:34:25Z",
+					"dataType": "news",
+					"sim": 0.7254902124404907,
+					"url": "https:\/\/dailyhive.com\/edmonton\/wnba-host-preseason-game-edmonton-may",
+					"title": "WNBA will host preseason game in Edmonton in May | Offside",
+					"body": "The WNBA has announced that it will be hosting a preseason game in Edmonton.\n\nIn what will be the second WNBA game played north of the US border, the Los Angeles Sparks and Seattle Storm will hit the court in downtown Edmonton at Rogers Place on May 5.\n\nThis will be the first time such an event has been held in the Alberta capital and the second game to be hosted in the country. The first game came last year when the Chicago Sky and Minnesota Lynx battled it out at Toronto's Scotiabank Arena in front of a sold-out audience.\n\nRogers Place doesn't typically play host to basketball games. The only times a court has been installed in the arena is during various visits from the Harlem Globetrotters and back in 2022 when the Toronto Raptors sold out the stadium for a preseason game.\n\nThe WNBA is the premier women's league and has been growing in popularity among sports fans for quite some time. This also comes as rumours about a possible WNBA expansion team in Toronto have been making the rounds, which would be the first Canadian team in the league.\n\nThe WNBA currently consists of 12 teams across the United States, with a 13th team in California slated to make their debut in 2025.\n\nTickets for the game will go on sale on March 20, but you can register for front-of-line access here.",
+					"source": {
+						"uri": "dailyhive.com",
+						"dataType": "news",
+						"title": "dailyhive.com"
+					},
+					"authors": [
+						{
+							"uri": "preston_hodgkinson@dailyhive.com",
+							"name": "Preston Hodgkinson",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/images.dailyhive.com\/20240307112615\/WNBA-Edmonton-500x258.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.04313725490196085,
+					"wgt": 447536214,
+					"relevance": 1
+				},
+				{
+					"uri": "8017278269",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:30:20",
+					"dateTime": "2024-03-07T19:30:20Z",
+					"dateTimePub": "2024-03-07T19:29:47Z",
+					"dataType": "news",
+					"sim": 0.8509804010391235,
+					"url": "https:\/\/www.cbc.ca\/sports\/basketball\/wnba-canada-game-edmonton-1.7136971",
+					"title": "WNBA heading to Canada for 2nd straight year with pre-season game in Edmonton | CBC Sports",
+					"body": "The WNBA will play a preseason game in Canada for the second consecutive year with the Los Angeles Sparks facing the Seattle Storm on May 5 in Edmonton.\n\nThe inaugural WNBA Canada Game last season saw the Chicago Sky beat the Minnesota Lynx in front of a sold out crowd in Toronto. That preseason game set records for broadcast viewership, attendance and merchandise sales in Canada.\n\nToronto is one of the cities that is under consideration for WNBA expansion if the right ownership group can be found. CBC Sports' Shireen Ahmed recently reported that Larry Tanenbaum, a part-owner of sports giant MLSE, is pursuing a team through his holding company, the Kilmer Group.\n\nWNBA commissioner Cathy Engelbert stated on a conference call that Golden State would be the only expansion team for 2025, but that they were hoping for more franchises for the 2026 season.\n\n\"We continue to spend a lot of time to engage with several interested owners in a number of markets,\" she said. \"I have no news to report at this time. Any teams would begin in 2026 and beyond.\"\n\nThe four-time champion Seattle Storm have had a big off-season, adding free agents Nneka Ogwumike and Skylar Diggins-Smith to a talented group that includes Ezi Magbegor and Jewell Loyd. Ogwumike had spent her entire career with the Sparks before she left as a free agent this year.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game,\" Los Angeles Sparks co-owner Magic Johnson said in a statement.\n\nThis will be the fourth WNBA preseason game outside of the U.S. There were also games in Manchester, England (2011) and Monterrey, Mexico (2004).\n\nEngelbert said that the league would consider playing a regular-season game outside of the U.S., although it would have to be at the right time, most likely not an Olympic year.\n\n\"It's something we're thinking about for the future,\" she said. \"We'll be looking at it in years we don't have international competitions to interrupt the season.\"",
+					"source": {
+						"uri": "cbc.ca",
+						"dataType": "news",
+						"title": "CBC News"
+					},
+					"authors": [],
+					"image": "https:\/\/i.cbc.ca\/1.7136979.1709839031!\/fileImage\/httpImage\/image.jpg_gen\/derivatives\/16x9_620\/nurse-kia-030724.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2156862745098038,
+					"wgt": 447535820,
+					"relevance": 1
+				},
+				{
+					"uri": "8017276690",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:28:30",
+					"dateTime": "2024-03-07T19:28:30Z",
+					"dateTimePub": "2024-03-07T19:28:01Z",
+					"dataType": "news",
+					"sim": 0.8470588326454163,
+					"url": "https:\/\/www.latimes.com\/sports\/sparks\/story\/2024-03-07\/sparks-seattle-storm-wnba-preseason-game-in-canada",
+					"title": "Sparks to play preseason game in Canada as WNBA heads north for second straight year",
+					"body": "The WNBA will play a preseason game in Canada for the second consecutive year with the Sparks facing the Seattle Storm on May 5 in Edmonton, Alberta.\n\nThe inaugural WNBA Canada Game last season saw the Chicago Sky beat the Minnesota Lynx in front of a sold out crowd in Toronto. That preseason game set records for broadcast viewership, attendance and merchandise sales in Canada.\n\nToronto is one of the cities that is under consideration for WNBA expansion if the right ownership group can be found. WNBA Commissioner Cathy Engelbert stated on a conference call that Golden State would be the only expansion team for 2025, but that they were hoping for more franchises for the 2026 season.\n\n\"We continue to spend a lot of time to engage with several interested owners in a number of markets,\" she said. \"I have no news to report at this time. Any teams would begin in 2026 and beyond.\"\n\nThe four-time champion Seattle Storm have had a big offseason, adding free agents Nneka Ogwumike and Skylar Diggins-Smith to a talented group that includes Ezi Magbegor and Jewell Loyd. Ogwumike had spent her entire career with the Sparks before she left as a free agent this year.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game,\" Los Angeles Sparks co-owner Magic Johnson said in a statement. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nThis will be the fourth WNBA preseason game outside of the U.S. There were also games in Manchester, England (2011) and Monterrey, Mexico (2004).\n\nEngelbert said that the league would consider playing a regular-season game outside of the U.S., although it would have to be at the right time, most likely not an Olympic year.\n\n\"It's something we're thinking about for the future,\" she said. \"We'll be looking at it in years we don't have international competitions to interrupt the season.\"",
+					"source": {
+						"uri": "latimes.com",
+						"dataType": "news",
+						"title": "Los Angeles Times"
+					},
+					"authors": [],
+					"image": "https:\/\/ca-times.brightspotcdn.com\/dims4\/default\/9ae370d\/2147483647\/strip\/true\/crop\/5248x2952+0+0\/resize\/1200x675!\/quality\/75\/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbc%2Fcc%2Fb35e25584598a03b6da5fc39fde9%2Fstorm-lynx-basketball-40376.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2705882352941176,
+					"wgt": 447535710,
+					"relevance": 1
+				},
+				{
+					"uri": "8017274619",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:26:48",
+					"dateTime": "2024-03-07T19:26:48Z",
+					"dateTimePub": "2024-03-07T19:26:09Z",
+					"dataType": "news",
+					"sim": 0.7411764860153198,
+					"url": "https:\/\/www.winnipegfreepress.com\/uncategorized\/2024\/03\/07\/wnba-to-hold-pre-season-game-between-sparks-and-storm-in-edmonton-on-may-5",
+					"title": "WNBA to hold pre-season game between Sparks and Storm in Edmonton on May 5",
+					"body": "I agree to the Terms and Conditions, Cookie and Privacy Policies, and CASL agreement.\n\nThe WNBA is coming back to Canada for a pre-season game in Edmonton.\n\nThe Los Angeles Sparks will face the Seattle Storm on May 5 at Rogers Place.\n\nIt's the second year in a row a Canadian city has hosted a WNBA pre-season game after Toronto's Scotiabank Arena held one in 2023.\n\nThe game in Edmonton will be the fourth WNBA pre-season held outside the United States with Manchester, England (2011) and Monterrey, Mexico (2004) previously hosting.\n\nThe Chicago Sky beat the Minnesota Lynx 82-74 before a sold-out crowd of 19,800 at Scotiabank Arena on May 13 in the inaugural WNBA Canada Game.\n\nThe four-time WNBA champion Storm currently features 2023 league scoring leader and All-Star Game MVP Jewell Loyd.\n\nThis report by The Canadian Press was first published March 6, 2024.",
+					"source": {
+						"uri": "winnipegfreepress.com",
+						"dataType": "news",
+						"title": "Winnipeg Free Press"
+					},
+					"authors": [],
+					"image": "https:\/\/www.winnipegfreepress.com\/wp-content\/uploads\/sites\/2\/2024\/02\/2024030714030-65ea0edca5171285253b6050jpeg.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2156862745098038,
+					"wgt": 447535608,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281447616",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:22:44",
+					"dateTime": "2024-03-07T19:22:44Z",
+					"dateTimePub": "2024-03-07T19:21:04Z",
+					"dataType": "news",
+					"sim": 0.658823549747467,
+					"url": "https:\/\/www.bnd.com\/sports\/nba\/article286392705.html",
+					"title": "WNBA Announced Preseason Game In Canada",
+					"body": "By Aaron Rose Sports Illustrated Toronto Raptors News, Analysis and More\n\nAfter the success of last year's preseason game in Toronto, the league has opted to host a preseason game in Edmonton this Summer with the Seattle Storm and Los Angeles Sparks scheduled to venture north on May 5, 2024, the league announced Thursday.\n\n\"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada,\" WNBA commissioner Cathy Engelbert wrote in a press release. \"Fans, partners and communities across the country embraced the WNBA, setting records for viewership, merchandise sales and attendance, and we're looking forward to the opportunity to once again showcase our league in a city with a rich sporting legacy and indelible ties to basketball through the Edmonton Grads and Canadian Women's National Basketball Team.\"\n\nToronto sold out its preseason game at Scotiabank Arena last spring and the hope is Edmonton will do the same this year at Rogers Arena.\n\n\"Sports teams from around the world know that Edmonton fans cheer the loudest, and I am excited for the Seattle Storm, Los Angeles Sparks and WNBA to experience the excitement in Edmonton for themselves!\" Edmonton mayor Amarjeet Sohi wrote in a press release. \"This game is another entry in Edmonton's long history of celebrating women's basketball, which includes the Edmonton Grads who continue to hold the North American record for the women's sports team with the best winning percentage. I am excited that Edmonton has the chance to showcase our amazing city, facilities and community spirit as we host this world class sporting event.\"\n\nIt'll be a Canadian homecoming for Kia Nurse who was recently acquired by the Sparks in a trade this offseason.\n\nTickets for the event will go on sale on March 20.",
+					"source": {
+						"uri": "bnd.com",
+						"dataType": "news",
+						"title": "Belleville News-Democrat"
+					},
+					"authors": [
+						{
+							"uri": "aaron_rose@bnd.com",
+							"name": "Aaron Rose",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/www.mcclatchy-wires.com\/incoming\/l5f6h2\/picture286255545\/alternates\/LANDSCAPE_1140\/12a3bfc8-6e2b-4016-ba38-bb6e0f4655cb",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2078431372549019,
+					"wgt": 447535364,
+					"relevance": 1
+				},
+				{
+					"uri": "2024-03-281444250",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:18:31",
+					"dateTime": "2024-03-07T19:18:31Z",
+					"dateTimePub": "2024-03-07T19:15:17Z",
+					"dataType": "news",
+					"sim": 0.7960784435272217,
+					"url": "https:\/\/www.seattletimes.com\/sports\/storm\/storm-to-open-preseason-with-matchup-against-the-sparks-in-canada\/",
+					"title": "Storm to open preseason with matchup against the Sparks in Canada",
+					"body": "The newest Storm additions Nneka Ogwumike and Skylar Diggins-Smith won't have to wait long to face their former teams.\n\nSeattle opens the 2024 WNBA preseason with a matchup against the Los Angeles Sparks in Edmonton, Canada on May 5 before a preseason home opener versus the Phoenix Mercury on May 7 at Climate Pledge Arena.\n\nIt's the first time Ogwumike, who played the previous 12 years in LA, and Diggins-Smith, who spent her last three years in the WNBA in Phoenix, will face their old squads with the Storm.\n\nSeattle's exhibition opener is also a homecoming of sorts for coach Noelle Quinn who serves as an assistant on the Canadian women's senior national basketball team that trains in Edmonton.\n\n\"We are thrilled for the opportunity to be a part of the WNBA Canada Game ... and showcase the incredible talent in the WNBA in Edmonton,\" Quinn said in a statement. \"I've been honored to work with the Canadian senior women's national team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports.\"\n\nThe Seattle-Los Angeles pairing is the second WNBA game played in Canada following last year's exhibition between the Minnesota Lynx and Chicago Sky that was played in Toronto.\n\n\"After the success in Toronto last season we want to bring the WNBA back to Canada and we felt like Edmonton was the perfect place to move west this year,\" WNBA Commissioner Cathy Engelbert said. \"It's a hugely passionate sports city. It's been the home to the Canadian senior women's national team for a decade.\n\n\"We know basketball is a passion in Canada. We know we have five-plus million WNBA fans here in Canada and we've seen huge viewership increases.\"\n\nEarlier this week, reports surfaced that Canadian billionaire sports mogul Larry Tanenbaum, a minority owner and chairman of sporting giant Maple Leafs Sports and Entertainment which owns the NBA's Raptors and NHL's Maple Leafs, wants to put an expansion WNBA team in Toronto.\n\nIn October, the WNBA awarded the Golden State Warriors its 13th franchise, which will begin play in San Francisco in 2025.\n\nInitially, Portland was at the top of a short list of cities poised to be awarded a WNBA expansion team. However, those plans were shelved in November due to concerns about the availability of the Moda Center, the home of the Trail Blazers.\n\nEngelbert said there's no specific timeline to add another WNBA expansion team, but noted the league generally needs 18 months before adding a new franchise.\n\nThe earliest the league would expand is 2026, Engelbert noted.\n\nOther cities the WNBA has recently considered for expansion include: Denver, Philadelphia, Charlotte, N.C., Nashville, Tenn. and Austin, Texas.",
+					"source": {
+						"uri": "seattletimes.com",
+						"dataType": "news",
+						"title": "The Seattle Times"
+					},
+					"authors": [
+						{
+							"uri": "percy_allen@seattletimes.com",
+							"name": "Percy Allen",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/images.seattletimes.com\/wp-content\/uploads\/2024\/02\/02192024_tzr_tzr_141837.jpg?d=1020x655",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2549019607843137,
+					"wgt": 447535111,
+					"relevance": 1
+				},
+				{
+					"uri": "8017262470",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:16:21",
+					"dateTime": "2024-03-07T19:16:21Z",
+					"dateTimePub": "2024-03-07T19:15:52Z",
+					"dataType": "news",
+					"sim": 0.8823529481887817,
+					"url": "https:\/\/calgary.citynews.ca\/2024\/03\/07\/edmonton-wnba-game\/",
+					"title": "WNBA returning to Canada for pre-season game in Edmonton",
+					"body": "The WNBA will be returning to Canada for another pre-season game this spring when the Los Angeles Sparks take on the Seattle Storm on May 5 at Rogers Place in Edmonton.\n\nThe game will feature Canadian national team star Kia Nurse, who was traded to the Sparks from the Storm in January.\n\n\"We wanted to bring the WNBA back to Canada, and Edmonton felt like the perfect place to move west this year,\" WNBA commissioner Cathy Engelbert said. \"A hugely passionate sports city, Edmonton has been home to the Canadian senior women's national team for a decade, and we know basketball is a passion in Canada. We know we have five-plus million WNBA fans here in Canada.\"\n\nOther players coming to Canada for the game include last year's scoring leader, Jewell Loyd, and eight-time All-Star Nneka Ogwumike of the Storm, as well as All-Star Layshia Clarendon and former Sixth Player of the Year Dearica Hamby of the Sparks.\n\nThe game in Edmonton will be the second WNBA pre-season game played in Canada. Last May, the Chicago Sky defeated the Minnesota Lynx 82-74 in front of a sold-out Scotiabank Arena crowd in Toronto, with Canadian national team member Bridget Carleton featuring for the Lynx.\n\nThe WNBA has also previously played international games in Manchester, England (2011), and Monterrey, Mexico (2004).\n\n\"Last year, we were thrilled with the way Canada, and Toronto specifically, but I would say the country responded to having our first-ever game there,\" Engelbert said. \"Globalizing the game is an important part of our strategy, and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\"\n\nToronto has recently been back in the WNBA conversation after Shireen Ahmed of CBC Sports reported that executive Larry Tanenbaum is pursuing an expansion team.\n\nTanenbaum, a minority owner and chairman of MLSE, is seeking the team through his holding company, the Kilmer Group.\n\nThe WNBA awarded its 13th franchise to the NBA's Golden State Warriors for a reported $50 million in October.\n\n\"From an expansion perspective, what we're looking for in any city or market we're talking to is a committed ownership group with a great arena situation, practice facility, player experience,\" Engelbert said. \"You know, I'm a data person, and I look at a lot of data about the market and kind of our typical WNBA fan, but how can we grow that fan base and other fan segments?",
+					"source": {
+						"uri": "calgary.citynews.ca",
+						"dataType": "news",
+						"title": "CityNews Calgary"
+					},
+					"authors": [
+						{
+							"uri": "lauryn_heintz@calgary.citynews.ca",
+							"name": "Lauryn Heintz",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/calgary.citynews.ca\/wp-content\/blogs.dir\/sites\/8\/2024\/03\/07\/Edmonton-Oilers-Rogers-Place-1040x572-1.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1607843137254903,
+					"wgt": 447534981,
+					"relevance": 1
+				},
+				{
+					"uri": "8017261359",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:15:16",
+					"dateTime": "2024-03-07T19:15:16Z",
+					"dateTimePub": "2024-03-07T19:14:47Z",
+					"dataType": "news",
+					"sim": 0.8705882430076599,
+					"url": "https:\/\/pr.nba.com\/second-wnba-canada-game-presented-by-tangerine-to-feature-los-angeles-sparks-and-seattle-storm-in-edmonton-alberta\/",
+					"title": "Second WNBA Canada Game presented by Tangerine to feature Los Angeles Sparks and Seattle Storm in Edmonton, Alberta - NBA.com: NBA Communications",
+					"body": "TORONTO - The Women's National Basketball Association (WNBA) today announced that the second WNBA Canada Game presented by Tangerine will feature the Los Angeles Sparks and the Seattle Storm playing a preseason game on Sunday, May 5, 2024, at Rogers Place in Edmonton, AB.\n\nThe four-time WNBA champion Storm currently features 2023 WNBA scoring leader and AT&T WNBA All-Star Game MVP Jewell Loyd, 2023 WNBA All-Defensive Second Team member Ezi Magbegor, and newest additions through free agency, eight-time WNBA All-Star Nneka Ogwumike and six-time WNBA All-Star Skylar Diggins-Smith.\n\nThe three-time WNBA champion Sparks currently feature WNBA All-Star Layshia Clarendon, 2022 WNBA Champion and two-time Kia WNBA Sixth Player of the Year Dearica Hamby and recently acquired Canadian star Kia Nurse (Hamilton, ON). One of the original eight WNBA franchises, Los Angeles owns the second and fourth overall first-round picks in the upcoming 2024 WNBA Draft presented by State Farm scheduled for Monday, April 15.\n\nTickets for the 2024 WNBA Canada Game presented by Tangerine will go on general sale March 20 at ticketmaster.ca. Fans in Canada can register to be notified of presale ticket access at WNBACanadaGame.com. Broadcast details and the start time for the 2024 WNBA Canada Game presented by Tangerine will be announced in the near future. Additional supporting partners of the 2024 WNBA Canada Game presented by Tangerine include the Canadian Tire Corporation and Explore Edmonton.\n\nThe 2024 WNBA Canada Game presented by Tangerine will be the second preseason WNBA game to ever be played in Canada and the fourth preseason WNBA game outside of the United States, following previous games in Toronto, ON (2023); Manchester, England (2011) and Monterrey, Mexico (2004).\n\nThe inaugural WNBA Canada Game presented by Tangerine saw the Chicago Sky defeat the Minnesota Lynx 82-74 in front of a sold-out crowd at Scotiabank Arena in Toronto. The preseason game set records for broadcast viewership, attendance and merchandise sales in Canada. The WNBA is also coming off its most-watched regular season in 21 years. Viewership for the 2023 season across the league's national television partners in the U.S. and Canada was up 21 and 32 percent, respectively, over the 2022 season. The league also set new highs across WNBA digital platforms and social media engagement.\n\n\"We couldn't be more excited to bring the Sparks and Storm to Edmonton after last year's historic game in Toronto, which showcased the incredible momentum around women's basketball across Canada. Fans, partners and communities across the country embraced the WNBA, setting records for viewership, merchandise sales and attendance, and we're looking forward to the opportunity to once again showcase our league in a city with a rich sporting legacy and indelible ties to basketball through the Edmonton Grads and Canadian Women's National Basketball Team.\"\n\nTangerine President & CEO Gillian Riley:\n\n\"As foundational partner of the WNBA in Canada, we're thrilled to be part of the growth of the game for women and to welcome this second showing of the WNBA Canada Game, this year in Edmonton. If last year showed us anything, it's that fans in Canada are amped to support women's sports - and so are we at Tangerine! We can't wait to cheer on WNBA basketball for another year as we move the game forward, together.\"\n\nLos Angeles Sparks Co-Owner Magic Johnson:\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game presented by Tangerine. Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm!\"\n\nSeattle Storm Head Coach Noelle Quinn:\n\n\"We are thrilled for the opportunity to be a part of the WNBA Canada Game presented by Tangerine and showcase the incredible talent in the WNBA in Edmonton. I've been honored to work with the Canadian senior women's national team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports. This game represents the growth of women's basketball both in Canada and on a global stage.\"\n\nCity of Edmonton Mayor Amarjeet Sohi:\n\n\"Sports teams from around the world know that Edmonton fans cheer the loudest, and I am excited for the Seattle Storm, Los Angeles Sparks and WNBA to experience the excitement in Edmonton for themselves! This game is another entry in Edmonton's long history of celebrating women's basketball, which includes the Edmonton Grads who continue to hold the North American record for the women's sports team with the best winning percentage. I am excited that Edmonton has the chance to showcase our amazing city, facilities and community spirit as we host this world class sporting event.\"\n\nPresident and Chief Operating Officer, Rogers Place and ICE District, Stuart Ballantyne:\n\n\"We are thrilled to welcome the WNBA and basketball fans from across the country back to ICE District, Canada's largest sports and entertainment district. Fans are still talking about the NBA preseason game in 2022, and we look forward to hosting more of the world's most elite basketball stars from the Los Angeles Sparks, including Canada's own Kia Nurse, and Seattle Storm at Rogers Place in May for another unforgettable experience.\"",
+					"source": {
+						"uri": "pr.nba.com",
+						"dataType": "news",
+						"title": "NBA.com: NBA Communications"
+					},
+					"authors": [],
+					"image": "https:\/\/ak-static.cms.nba.com\/wp-content\/uploads\/sites\/46\/2024\/03\/WNBA-Canada-Game-300x128.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1764705882352942,
+					"wgt": 447534916,
+					"relevance": 1
+				},
+				{
+					"uri": "8017261144",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:14:51",
+					"dateTime": "2024-03-07T19:14:51Z",
+					"dateTimePub": "2024-03-07T19:14:33Z",
+					"dataType": "news",
+					"sim": 0.8274509906768799,
+					"url": "https:\/\/www.tsn.ca\/kia-nurse-los-angeles-sparks-to-face-seattle-storm-in-wnba-preseason-game-in-edmonton-1.2086255",
+					"title": "Kia Nurse, Los Angeles Sparks to face Seattle Storm in WNBA preseason game in Edmonton | TSN",
+					"body": "The WNBA announced Thursday that the league will host a preseason game in Canada on Sunday, May 5 at Rogers Place in Edmonton, featuring the Los Angeles Sparks and Seattle Storm.\n\nThis is the second preseason WNBA game to be played in Canada after the league hosted a game last year in Toronto between the Chicago Sky and Minnesota Lynx. It was a sold-out crowd of 19,923 at Scotiabank Arena, making it the highest-attended as well as the most-watched WNBA preseason game ever.\n\nThe Sparks boast Canadian star Kia Nurse, who hails from Hamilton, Ont. Nurse was acquired by the Sparks on Jan. 31 from the Storm along with the 2024 fourth-overall pick. Nurse averaged 5.9 points and 2.3 rebounds in 40 games last season with Seattle.\n\nNurse will be the second Canadian WNBA player to play a game on home soil. In last year's game in Toronto, Minnesota Lynx's Bridget Carleton, who hails from Chatham, Ont., made history as the first to accomplish the feat.\n\n\"One of Canada's greatest basketball players, Sparks guard Kia Nurse, is returning to play in front of her Canadian fans as my Los Angeles Sparks take on the Seattle Storm in this year's WNBA Canada Game presented by Tangerine,\" said Sparks co-owner Magic Johnson in a release. \"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S. Last year's game was a sellout and I expect nothing less for the Sparks versus Storm.\"\n\nThe Storm had a big off-season, adding 2016 WNBA MVP Nneka Ogwumike and six-time All-Star Skylar Diggins-Smith in free agency, joining two-time champion and 2023 scoring leader Jewell Loyd.\n\n\"Last year we were thrilled with the way Canada [and] Toronto specifically, I would say the country responded to having our first-ever game there,\" said WNBA commissioner Cathy Engelbert in a media call. \"Globalizing the game is part of our strategy and given that Canada is our neighbour to the north here in the U.S., I think the success of that game was amazing.\"\n\nThe WNBA has also previously held exhibition games in Manchester, England (2011) and Monterrey, Mexico (2004).\n\n\"We are thrilled for the opportunity to be a part of the WNBA Canada Game presented by Tangerine and showcase the incredible talent in the WNBA in Edmonton,\" said Seattle Storm head coach Noelle Quinn.\n\n\"I've been honored to work with the Canadian senior women's national team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports. This game represents the growth of women's basketball both in Canada and on a global stage.\"",
+					"source": {
+						"uri": "tsn.ca",
+						"dataType": "news",
+						"title": "TSN"
+					},
+					"authors": [],
+					"image": "https:\/\/www.tsn.ca\/content\/dam\/tsn\/en\/home\/images\/2023\/5\/19\/canada-s-kia-nurse-makes-wnba-return-in-new-setting--joy-but-wit-1-1962475-1709829784829.jpeg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2,
+					"wgt": 447534891,
+					"relevance": 1
+				},
+				{
+					"uri": "8017258876",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:13:20",
+					"dateTime": "2024-03-07T19:13:20Z",
+					"dateTimePub": "2024-03-07T19:12:47Z",
+					"dataType": "news",
+					"sim": 0.7411764860153198,
+					"url": "https:\/\/www.thestar.com\/sports\/basketball\/wnba-is-coming-back-to-canada-for-exhibition-game-but-a-potential-toronto-expansion-wont\/article_ba4827a6-dc85-11ee-abaf-33e60a7023c9.html",
+					"title": "WNBA is coming back to Canada for exhibition game  --  but a potential Toronto expansion won't happen before 2026",
+					"body": "The WNBA is coming back to Canada this spring for another one-off exhibition game but it's going to be years before an expansion team could possibly land here.\n\nThe league's second WNBA Canada Game pre-season game has the Los Angeles Sparks and Seattle Storm in Edmonton in early May.\n\n×\n\nAlready a Subscriber? Sign in You are logged in Switch accounts\n\nAny chance of a team in Toronto won't happen before the 2026 season.\n\nARTICLE CONTINUES BELOW ARTICLE CONTINUES BELOW\n\n\"I've always said I think about 18 months about is what you need to essentially finalize things,\" WNBA commissioner Cathy Engelbert said in a Zoom call with reporters to announce the May 5 game in Edmonton.\n\n\"Quite frankly, that's why we took 2025 off the table a few months ago and we're working on 2026 now.\"\n\nDreams of a Toronto franchise were fanned again this week when sources said a new sports\/entertainment entity led by Larry Tanenbaum was formed and has renewed interest of a WNBA team for the city.\n\nEngelbert did not speak to specifics of a Toronto bid but sources have told The Star for weeks that hopes of a Toronto team are very much alive.\n\n\"We continue to spend a lot of time and engage in very productive conversations with several interested ownership groups in a number of cities and markets,\" Englebert said. \"No news to report at this time, not close, but did want to note that any future of expansion with teams will begin play in 2026 or beyond.\"\n\nYou might be interested in Breaking News Headlines & Top Stories | The Star Dec 31, 1969 Comments Breaking News Headlines & Top Stories | The Star Dec 31, 1969 Comments\n\nToronto hosted the league's first Canadian pre-season game last May to rave results. A sellout crowd of nearly 20,000 saw the Minnesota Lynx play the Chicago Sky and led to cries for an expansion team here. This season, the league decided to expend its Canadian footprint to the west.\n\n\"It was felt the perfect place was to move to the west this year, a hugely passionate sports city, (Edmonton) has been the home to the national women's team for a decade,\" the commissioner said.\n\nARTICLE CONTINUES BELOW\n\n\"The league coming here to Canada again is a sign of the importance we seen in to global growth of our game, bringing the WNBA to a global platform\"\n\nBut a permanent franchise in Canada best fits in Toronto. The league will add a 13th franchise for the 2025 season with expansion to San Francisco. It was wildly expected Portland would be in line for a second 2025 season but arena issues scuttled that a bit. It through open the window for 2026 expansion and put Tanenbaum's new Kilmer Sports Ventures in the running.\n\nIt fills all the demands of the league and Tanenbaum's deep ties with the NBA -- he's the chairman of the league's board of governors -- places him uniquely among possible owners. His new Kilmer venture entity is seeking for sports and entertainment possibilities.\n\n\"What we're looking from any city or market we're talking to is committed ownership group with an arena situation, a practice facility, a player experience,\" Engelbert said. \"Obviously financial wherewithal is important as well, the valuation of our franchises is going up so obviously ownership has to be in it for the long term.\"",
+					"source": {
+						"uri": "thestar.com",
+						"dataType": "news",
+						"title": "The Star"
+					},
+					"authors": [
+						{
+							"uri": "doug_smith@thestar.com",
+							"name": "Doug Smith",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/bloximages.chicago2.vip.townnews.com\/thestar.com\/content\/tncms\/assets\/v3\/editorial\/d\/1a\/d1ad36b8-1439-5e9b-bd32-caf7ad2f5010\/65ea050c8a0e7.image.jpg?crop=1763%2C926%2C0%2C125&resize=438%2C230&order=crop%2Cresize",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2862745098039217,
+					"wgt": 447534800,
+					"relevance": 1
+				},
+				{
+					"uri": "8017255837",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:10:50",
+					"dateTime": "2024-03-07T19:10:50Z",
+					"dateTimePub": "2024-03-07T19:10:12Z",
+					"dataType": "news",
+					"sim": 0.8666666746139526,
+					"url": "https:\/\/www.theglobeandmail.com\/sports\/basketball\/article-wnba-to-play-exhibition-game-in-edmonton-in-may\/",
+					"title": "WNBA to play exhibition game in Edmonton in May",
+					"body": "Last May, the Women's National Basketball Association sold out Toronto's Scotiabank Arena for its first game in Canada. Now the league is bringing another pre-season game north of the border, this time out west.\n\nThe WNBA said Thursday that Rogers Place in Edmonton will play host to an exhibition game on May 5, between the Los Angeles Sparks and the Seattle Storm.\n\n\"After the success in Toronto last season, we want to bring the WNBA back to Canada,\" WNBA commissioner Cathy Engelbert said on a media call this week announcing the Edmonton game. \"We know basketball is a passion in Canada. We know we have five-plus-million WNBA fans in Canada.\"\n\nNews that the WNBA has been planning this second game in Canada lands on the heels of a separate report about the league that made waves earlier this week - that Toronto could be in play for a WNBA expansion franchise.\n\nOn Monday, CBC reported that Maple Leaf Sports & Entertainment minority owner Larry Tanenbaum is trying to bring a WNBA team to Toronto, but independently of MLSE. The board of MLSE - the parent company of the city's Leafs, Raptors, Argonauts and Toronto FC - decided a year ago not to chase a WNBA team.\n\nTanenbaum is reportedly rekindling that possibility by seeking the expansion franchise through his holding company, Kilmer Group.\n\nThe WNBA wants a 14th team, but Engelbert is keeping her expansion conversations with interested cities close to the vest. In October, the league awarded the Golden State Warriors a WNBA expansion team in the San Francisco Bay Area - which will begin play in 2025 as the league's 13th team - for a reported US$50-million.\n\nEngelbert faced questions about WNBA expansion during her media. She clarified that any further expansion team would begin play in 2026 or beyond. She said the 2025 season is off the table for a 14th team, and that a new franchise will need at least 18 months to prepare for launch.\n\n\"We continue to spend a lot of time and engage in very productive conversations with several interested ownership groups in a number of cities and markets,\" Engelbert said.\n\nWhile Kilmer Group would not confirm CBC's report this week, it did announce Tuesday that long-time European soccer executive Ivan Gazidis has been hired to lead a new division, Kilmer Sports Venture. It said this new division will focus on investment opportunities in sports and entertainment.\n\nThe CBC story said Tanenbaum is looking at Coca-Cola Coliseum on Toronto's Exhibition Place grounds as a potential venue, should he land the team. That arena holds just shy of 8,000 when configured for basketball and is currently home to the Toronto Marlies of the AHL.\n\nToronto's pre-season game between the Minnesota Lynx and Chicago Sky, in the Raptors home arena, packed in nearly 20,000 fans, many sporting the WNBA's signature bright orange hoodie.\n\nLeague merchandise - including shirts with the slogan \"Women run the court\" - sold out on that spring afternoon in Toronto. Fans held up signs trumpeting their support for a Canadian team, such as \"Toronto wants the NBA\" and \"Future season ticket holder.\"\n\n\"I get chills still thinking of that vibe last year,\" said Engelbert, reminiscing about that Toronto game.\n\nThat Scotiabank Arena game inspired events across the city that weekend, themed around female sport. A who's who of athletes, league builders, and business minds huddled to discuss the burgeoning women's sports market in Canada. They gathered in suites at the game, and held basketball clinics, speaker events and postgame parties. Tickets sold out in a single day. The city seemed to nail what felt to fans like an audition for an expansion team.\n\nEngelbert said the WNBA is looking for committed ownership while considering expansion candidates, plus a great player experience, arena and practice facility, and financial wherewithal.\n\n\"Valuations of our teams are going up, so obviously owners have to be in it for the long term,\" Engelbert said. \"We look at demographics, psychographics. ... I'm looking at a lot of data about the market and kind of our typical WNBA fan, but how can we grow that fan base in other fan segments? Certainly, Toronto, did great on that last year.\"\n\nThe exhibition game in Edmonton will feature league stars such as Jewell Loyd, Nneka Ogwumike and Skylar Diggins-Smith for Seattle; and Layshia Clarendon for LA alongside recently acquired Canadian Olympian Kia Nurse.\n\nEdmonton's Rogers Place is home to the NHL's Oilers. It can hold about 19,500 for basketball.\n\nEngelbert said Edmonton was chosen because of its reputation as a sports city, and more specifically its ties to basketball. It's a training hub for the Canadian women's national team and home to the historic women's championship team, the Edmonton Grads. In 2022, the Raptors packed Rogers Place for a pre-season game against the Utah Jazz - part of the NBA Canada series that began in 2012 and in which the Raptors have played games across Canada.\n\nTickets for Edmonton's WNBA preseason game go on general sale March 20.",
+					"source": {
+						"uri": "theglobeandmail.com",
+						"dataType": "news",
+						"title": "The Globe and Mail"
+					},
+					"authors": [],
+					"image": "https:\/\/www.theglobeandmail.com\/resizer\/v2\/EODASAMNHBHBLPLCXOLK2ATUNM.jpg?auth=9b2b49e59b7851840a01ea1058bcf52bb6e5beb3b50f14bf500908986d800121&width=560&quality=80",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2,
+					"wgt": 447534650,
+					"relevance": 1
+				},
+				{
+					"uri": "8017249431",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:06:10",
+					"dateTime": "2024-03-07T19:06:10Z",
+					"dateTimePub": "2024-03-07T19:05:43Z",
+					"dataType": "news",
+					"sim": 0.8392156958580017,
+					"url": "https:\/\/toronto.citynews.ca\/2024\/03\/07\/wnba-announces-another-canada-game-commissioner-addresses-toronto-expansion-rumors\/",
+					"title": "WNBA announces another Canada game, commissioner addresses Toronto expansion rumors.",
+					"body": "The first Canadian WNBA game sold out in minutes and they are hoping for a repeat, this time in a different location.\n\nThe WNBA and NBA Canada announced on Thursday afternoon that they will be hosting another preseason game in Canada after an immensely successful first game in Toronto last May, this time in Edmonton.\n\nOn May 5, the Los Angeles Sparks and Seattle Storm will tip-off at Rogers Place in downtown Edmonton.\n\nThe first game saw Team Canada's Bridget Carleton and the Minnesota Lynx beat the Chicago Sky in front of a packed Scotiabank Arena of almost 20,000 fans.\n\nThis time Carleton's Team Canada teammate Kia Nurse will get to shine in front of the home country. Nurse was traded to the Sparks in the off-season from the Storm and will take on her former team, which is led by her current Team Canada Assistant Coach Noelle Quinn.\n\n\"We are thrilled for the opportunity to be a part of the WNBA Canada Game presented by Tangerine and showcase the incredible talent in the WNBA in Edmonton,\" Quinn said in a press release \"I've been honored to work with the Canadian Senior Women's National Team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports.\"\n\n\"This game represents the growth of women's basketball both in Canada and on a global stage.\"\n\nThe game follows a report by CBC's Shireen Ahmed that stated billionaire Larry Tanenbaum is reportedly pursuing a WNBA expansion team for Toronto.\n\nIn a media availability ahead of the game announcement, WNBA Commissioner Cathy Engelbert spoke about the potential of an expansion.\n\n\"We continue to engage in a lot of very productive conversations with several interested ownership groups in a number of cities and markets and have no news to report at this time,\" Englebert stated. \"I did want to note that any future expansion teams would begin play in 2026, which was incorrect in a report saying 2025\"\n\nCityNews asked the commissioner what the league looked for in an expansion city and how Toronto faired when they hosted the game last May.\n\n\"Last year we were thrilled with the way Canada and Toronto, Toronto specifically, but I would say how the country responded to having our first-ever game there and globalizing the game is important part of our strategy. And given that Canada is our neighbor to the north here in the U.S., I think the success of that game was amazing,\" said Englebert.\n\n\"For me to see Scotiabank Arena packed, the fan merch lines and fans coming up to me, and I was surprised they even knew who I was and saying like, You have made our dreams come true by having a WNBA game here. So I get chills still thinking of that vibe last year.\"\n\nShe added, from an expansion perspective, they are looking for any city or market is a committed ownership group with a great arena situation, practice facility, and what the player experience would be.\n\n\"Obviously, financial wherewithal is important as well. Valuations of our teams are going up, so obviously owners have to be in it for the long-term and that's what we look at demographics, and psychographics. I'm a data person and I look at a lot of data about the market and kind of our typical WNBA fan, but how can we grow that fan base in other fan segments? And certainly Toronto did great on that last year.\"\n\nThe WNBA announced in October they were expanding for the first time since 2008 when they awarded the Golden State Warriors a WNBA Expansion team that will start play in the San Francisco Bay Area in 2025.\n\nTickets for the 2024 WNBA Canada Game presented by Tangerine will go on general sale on March 20 on Ticketmaster. Fans in Canada can register to be notified of presale ticket access at WNBACanadaGame.com",
+					"source": {
+						"uri": "toronto.citynews.ca",
+						"dataType": "news",
+						"title": "CityNews Toronto"
+					},
+					"authors": [
+						{
+							"uri": "meredith_bond@toronto.citynews.ca",
+							"name": "Meredith Bond",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/toronto.citynews.ca\/wp-content\/blogs.dir\/sites\/10\/2023\/05\/13\/CP166896585-scaled-e1709825753368.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1686274509803922,
+					"wgt": 447534370,
+					"relevance": 1
+				},
+				{
+					"uri": "8017246129",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:03:39",
+					"dateTime": "2024-03-07T19:03:39Z",
+					"dateTimePub": "2024-03-07T19:02:54Z",
+					"dataType": "news",
+					"sim": 0.8666666746139526,
+					"url": "https:\/\/theathletic.com\/5321961\/2024\/03\/07\/wnba-la-sparks-seattle-storm-canada-preseason-game\/",
+					"title": "WNBA to return to Canada with Sparks-Storm showdown",
+					"body": "On May 5, the Los Angeles Sparks and Seattle Storm will clash in a preseason game at Rogers Place in Edmonton, Alberta. It is the second WNBA preseason game in Canada with the inaugural version happening last year in Toronto.\n\n\"We want to bring the WNBA back to Canada,\" said WNBA commissioner Cathy Engelbert to reporters during a Zoom news conference Wednesday. \"Edmonton felt like the perfect place to move west this year. We know basketball is a passion in Canada.\"\n\nThis will be the fourth WNBA preseason game played outside the United States. Toronto (2023), Manchester, England (2011) and Monterrey, Mexico (2004) were the previous three non-U.S. WNBA preseason contests. The return to Canada is significant as the league continues to consider cities for future franchise expansion.\n\nEngelbert said Wednesday that any future expansion teams (except the WNBA Bay Area expansion franchise, which will start in 2025) won't begin play until 2026 and beyond. The Athletic previously reported that Toronto is a potential city to which the WNBA could bring an expansion team. Minority owner of Maple Leaf Sports and Entertainment (MLSE) Larry Tanenbaum is pursuing a WNBA expansion franchise in Toronto, according to CBC Sports.\n\nEngelbert said that charter travel \"isn't factoring into the decisions\" when it comes to expanding into Canada.\n\n\"What factors into the ability to provide charter will be the long-term economic model,\" Engelbert said. \"We're building media rights, corporate partnerships, and capitalizing on the momentum around our game right now.\"\n\nThe Sparks finished with a 17-23 record in 2023. An original WNBA franchise with three championships, the Sparks boast a roster that includes WNBA All-Star guard Layshia Clarendon and 2022 WNBA champion Dearica Hamby. The Sparks acquired Canadian guard Kia Nurse from the Storm on Jan. 31. Nurse's brother, Darnell, is a defenseman for the Edmonton Oilers.\n\n\"Showcasing some of the league's top talent in Canada is a great opportunity to continue building dedicated WNBA fans outside of the U.S.,\" said Sparks co-owner Magic Johnson.\n\nThe Storm finished 11-29 in 2023. Seattle added eight-time WNBA All-Star Nneka Ogwumike and six-time WNBA All-Star Skylar Diggins-Smith during free agency. Jewell Loyd, the 2023 WNBA scoring leader who averaged 24.7 points per game, headlines the Storm's roster.\n\n\"I've been honored to work with the Canadian senior women's national team and witness firsthand how Canada continues to be out front when it comes to advocating for women and investing in women's sports,\" said Storm coach Noelle Quinn.\n\nIn the inaugural WNBA Canada Game last year at Scotiabank Arena, the Chicago Sky defeated the Minnesota Lynx 82-74. Kahleah Copper led the Sky with 18 points on 8-of-16 shooting from the floor. Tiffany Mitchell paced the Lynx with 19 points on 6-of-8 shooting from the field. Bridget Carleton -- the lone Canadian playing in the game -- tallied three points, two rebounds and one assist. It was a sell-out crowd (an availability of 19,800 seats) with Toronto Raptors president Masai Ujiri, Oklahoma City Thunder guard Luguentz Dort and Serge Ibaka, an NBA champion with the Raptors, among those in attendance.\n\nTickets for the WNBA Canada Game in Edmonton go on sale on March 20. The 2024 WNBA season tips off on May 14.",
+					"source": {
+						"uri": "theathletic.com",
+						"dataType": "news",
+						"title": "The Athletic"
+					},
+					"authors": [
+						{
+							"uri": "lukas_weese@theathletic.com",
+							"name": "Lukas Weese",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/cdn.theathletic.com\/app\/uploads\/2024\/03\/06201224\/USATSI_20660925-scaled.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.1843137254901961,
+					"wgt": 447534219,
+					"relevance": 1
+				},
+				{
+					"uri": "8017245688",
+					"lang": "eng",
+					"isDuplicate": false,
+					"date": "2024-03-07",
+					"time": "19:03:05",
+					"dateTime": "2024-03-07T19:03:05Z",
+					"dateTimePub": "2024-03-07T19:02:35Z",
+					"dataType": "news",
+					"sim": 0.7882353067398071,
+					"url": "https:\/\/www.swishappeal.com\/wnba\/2024\/3\/7\/24092858\/wnba-canada-preseason-exhibition-game-second-edmonton-alberta-los-angeles-sparks-seattle-storm",
+					"title": "WNBA and NBA Canada to present second WNBA Canada preseason game in Edmonton",
+					"body": "The WNBA and NBA Canada are teaming up for the second WNBA Canada Game, this time in Edmonton, Alberta. On Sunday May 5, 2024, the Los Angeles Sparks will take on the Seattle Storm in a preseason exhibition game at Rogers Place.\n\nLast year, the WNBA held a preseason game between the Minnesota Lynx and Chicago Sky at Scotiabank Arena in Toronto. It was a wild success, with fans selling out the 19,000-seat arena in just minutes.\n\nThe entire weekend was filled with pop-ups, fun events, panels and art installments around the city, all celebrating the historic event. With recent news about the WNBA potentially expanding to Canada, the league has decided to hold a second exhibition game in Canada.\n\nThe choice to have the game in Edmonton presents an opportunity to highlight important women's basketball history. Canada's first formal professional basketball team was based out of Edmonton, called the Edmonton Commercial Graduates or the \"Grads.\" The Grads represented Canada at the 1924 Paris Olympic Games, since Canada Basketball did not have a designated women's program at that time. The Grads won gold in women's basketball at those games. To hold a game in Edmonton exactly 100 years after the first Edmonton professional women's basketball team made history at the Olympics seems fitting.\n\nThe Sparks have Canadian senior national team player Kia Nurse on their roster, who, along with the likes of Dearica Hamby and Layshia Clarendon, will serve as a veteran presence for a fiery young LA team. Los Angeles also owns the No. 2 and No. 4 overall draft picks in the 2024 WNBA Draft, allowing fans in Edmonton to be treated to some the league's newest, exciting talent. The Storm look like potential championship contenders, with Nneka Ogwumike and Skylar Diggins-Smith joining Jewell Loyd in Seattle.\n\nTickets will go on sale to the general public on Mar. 20, but fans can sign up for presale access at WNBACanadaGame.com.\n\nThis will be the second WNBA preseason game played in Canada, and fourth outside of the United States. The two others were in Manchester, England in 2011 and Monterrey, Mexico in 2004. WNBA viewership in Canada was up 32 percent in the 2023 season compared to 2022, and the preseason game in Toronto broke broadcast viewership records.\n\nCommissioner Cathy Engelbert expressed excitement about bringing the second WNBA Canada Game to fans, saying:\n\nFans, partners and communities across the country embraced the WNBA, setting records for viewership, merchandise sales and attendance, and we're looking forward to the opportunity to once again showcase our league in a city with a rich sporting legacy and indelible ties to basketball through the Edmonton Grads and Canadian Women's National Basketball Team.\n\nMore information about the broadcast of the game will be announced at a later date.",
+					"source": {
+						"uri": "swishappeal.com",
+						"dataType": "news",
+						"title": "Swish Appeal"
+					},
+					"authors": [
+						{
+							"uri": "chelsea_leite@swishappeal.com",
+							"name": "Chelsea Leite",
+							"type": "author",
+							"isAgency": false
+						}
+					],
+					"image": "https:\/\/cdn.vox-cdn.com\/thumbor\/40JMueD2w0S_YiXVrL27c3vMLG8=\/0x244:4320x2404\/fit-in\/1200x600\/cdn.vox-cdn.com\/uploads\/chorus_asset\/file\/25322081\/usa_today_20662217.jpg",
+					"eventUri": "eng-9375173",
+					"sentiment": 0.2627450980392156,
+					"wgt": 447534185,
+					"relevance": 1
+				}
+			],
+			"totalResults": 31,
+			"page": 1,
+			"count": 31,
+			"pages": 1
+		}
+	}
+}

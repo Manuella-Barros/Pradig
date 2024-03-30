@@ -548,6 +548,24 @@
 
 
 {
+  "uri": "704222901",
+  "lang": "eng",
+  "isDuplicate": false,
+  "date": "2017-08-04",
+  "time": "11:24:00",
+  "dateTime": "2017-08-04T11:24:00Z",
+  "sim": 0.8627451062202454,
+  "url": "http://www.sunstar.com.ph/manila/local-news/2017/08/04/aguirre-orders-nbi-probe-slay-ex-journalist-brother-556682",
+  "title": "Aguirre orders NBI to probe slay of ex-journalist, brother",
+  "body": "MANILA -- Justice Secretary Vitaliano Aguirre II ordered the National Bureau of Investigation (NBI) on Friday to investigate the killing of Michael D. Marasigan, a former journalist who was shot dead in San Juan City Thursday night.\n\nAguirre issued Department Order No. 515 directing NBI Director Dante Gierran to conduct a probe and case build-up on the killing of Marasigan and his brother, Christopher, who was with him inside the vehicle when the gunmen riding a motorcycle fired at them.\n\nRead: Former journalist shot dead in San Juan City\n\n\"I have signed a Department Order instructing the NBI to conduct a parallel investigation into the Aug. 3, 2017 gun attack that killed former media man, Michael D. Marasigan and his brother, businessman Christopher D. Marasigan in San Juan City,\" Aguirre said upon being informed of the incident.\n\nMarasigan worked as a communication consultant in the Department of Finance (DOF).\n\n\"Aside from catching the perpetrators, we want to know the real motives behind the attack on the victims. Is it because of Michael Marasigan's work as a media personality? Is it because of his previous employment with the Department of Finance? As the designated head of President Duterte's Task Force on Media Security, I am duty-bound to order this probe to get to the bottom of the attack. Our goal is to prevent similar attacks in the future. We want our NBI to explore all angles,\" Aguirre added.\n\nMarasigan was a former editor of Business Day and pioneered one of the country's first digitized newspapers -- BusinessWorld Online, becoming its first online chief editor. He was also an independent producer for the Living Asia channel and the creator of ourphilippines.tv.\n\nFor his part, DOF Secretary Carlos Dominguez III has called on law enforcement authorities to find and prosecute to the fullest extent of the law the perpetrators behind the killing of Marasigan, his communications consultant.\n\n\"I am both saddened and shocked,\" Dominguez said. \"My deepest condolences go to the family of Mike and that of his brother, Christopher.\"\n\n\"I have known Mike for over 30 years. I and his peers held him in very high regard for his skills and thorough professionalism,\" he added.\n\nThe DOF chief said Marasigan, who always had a kind word to everyone he meets,\" was a highly respected journalist and public relations man.\"\n\n\"As my communications consultant, he was always prompt, thorough and very good at what he did, which was to assist the DOF in relaying its key messages and programs to the public,\" he said. (PNA)",
+  "eventUri": "eng-3336869",
+  "source": {
+    "uri": "sunstar.com.ph",
+    "id": "2809",
+    "title": "Sun.Star"
+  },
+  "image": "http://www.sunstar.com.ph/sites/default/files/og/sunstar-manila-og.png",
+
   "categories": [
     {
       "uri": "dmoz/Society/Issues",
@@ -586,18 +604,6 @@
       "wgt": 100
     }
   ],
-  "lang": "eng",
-  "source": {
-    "uri": "sunstar.com.ph",
-    "id": "2809",
-    "title": "Sun.Star"
-  },
-  "uri": "704222901",
-  "body": "MANILA -- Justice Secretary Vitaliano Aguirre II ordered the National Bureau of Investigation (NBI) on Friday to investigate the killing of Michael D. Marasigan, a former journalist who was shot dead in San Juan City Thursday night.\n\nAguirre issued Department Order No. 515 directing NBI Director Dante Gierran to conduct a probe and case build-up on the killing of Marasigan and his brother, Christopher, who was with him inside the vehicle when the gunmen riding a motorcycle fired at them.\n\nRead: Former journalist shot dead in San Juan City\n\n\"I have signed a Department Order instructing the NBI to conduct a parallel investigation into the Aug. 3, 2017 gun attack that killed former media man, Michael D. Marasigan and his brother, businessman Christopher D. Marasigan in San Juan City,\" Aguirre said upon being informed of the incident.\n\nMarasigan worked as a communication consultant in the Department of Finance (DOF).\n\n\"Aside from catching the perpetrators, we want to know the real motives behind the attack on the victims. Is it because of Michael Marasigan's work as a media personality? Is it because of his previous employment with the Department of Finance? As the designated head of President Duterte's Task Force on Media Security, I am duty-bound to order this probe to get to the bottom of the attack. Our goal is to prevent similar attacks in the future. We want our NBI to explore all angles,\" Aguirre added.\n\nMarasigan was a former editor of Business Day and pioneered one of the country's first digitized newspapers -- BusinessWorld Online, becoming its first online chief editor. He was also an independent producer for the Living Asia channel and the creator of ourphilippines.tv.\n\nFor his part, DOF Secretary Carlos Dominguez III has called on law enforcement authorities to find and prosecute to the fullest extent of the law the perpetrators behind the killing of Marasigan, his communications consultant.\n\n\"I am both saddened and shocked,\" Dominguez said. \"My deepest condolences go to the family of Mike and that of his brother, Christopher.\"\n\n\"I have known Mike for over 30 years. I and his peers held him in very high regard for his skills and thorough professionalism,\" he added.\n\nThe DOF chief said Marasigan, who always had a kind word to everyone he meets,\" was a highly respected journalist and public relations man.\"\n\n\"As my communications consultant, he was always prompt, thorough and very good at what he did, which was to assist the DOF in relaying its key messages and programs to the public,\" he said. (PNA)",
-  "eventUri": "eng-3336869",
-  "isDuplicate": false,
-  "date": "2017-08-04",
-  "title": "Aguirre orders NBI to probe slay of ex-journalist, brother",
   "dateCrawl": "2017-08-04",
   "id": "15338253",
   "extractedDates": [
@@ -609,7 +615,6 @@
     }
   ],
   "storyUri": "eng-3336869",
-  "time": "11:24:00",
   "details": {},
   "concepts": [
     {
@@ -737,9 +742,7 @@
       "id": "1010108"
     }
   ],
-  "url": "http://www.sunstar.com.ph/manila/local-news/2017/08/04/aguirre-orders-nbi-probe-slay-ex-journalist-brother-556682",
   "timeCrawl": "11:24:00",
-  "image": "http://www.sunstar.com.ph/sites/default/files/og/sunstar-manila-og.png",
   "location": {
     "label": {
       "eng": "Manila"
@@ -752,7 +755,18 @@
     },
     "type": "place"
   },
-  "dateTime": "2017-08-04T11:24:00Z",
   "originalArticle": null,
-  "sim": 0.8627451062202454
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

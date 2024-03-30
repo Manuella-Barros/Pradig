@@ -1,0 +1,5 @@
+Pedidos do professor:
+
+    - Alterar o nome dos arquivos para o id do evento (a propriedade uri)
+    - Realizar novas requisições no endpoint de Get event details http://eventregistry.org/api/v1/event/getEvent,
+      para pegar informações detalhadas sobre um evento de acordo com o id (uri) dele

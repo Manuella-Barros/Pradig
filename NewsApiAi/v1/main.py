@@ -26,7 +26,7 @@ for event in events:
         print(event)
 
 # Esse trecho de código abaixo é só para saber quantos arquivo tem
-arr = os.listdir("./dataTxt_NewsApiAi")
+arr = os.listdir("dataTxt_NewsApiAi")
 
 print("quantidade de arquivos ")
 print(len(arr))

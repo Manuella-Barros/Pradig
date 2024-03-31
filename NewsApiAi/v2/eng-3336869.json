@@ -29,7 +29,8 @@
 //    "eventDate": "2017-08-04", "summary": {} //...
 //  },
 //  "eventArticles": [
-//
+//    {"categories": [{"uri": "dmoz/Society/Issues", "label": "dmoz/Society/Issues", "id": 41, "wgt": 100}, //...
+//    {"categories": [{"uri": "dmoz/Business/Business_Services/Fire_and_Security", "label": "dmoz/Business"]} //...
 //  ]
 //}
 
@@ -565,7 +566,6 @@
     "title": "Sun.Star"
   },
   "image": "http://www.sunstar.com.ph/sites/default/files/og/sunstar-manila-og.png",
-
   "categories": [
     {
       "uri": "dmoz/Society/Issues",
@@ -604,18 +604,6 @@
       "wgt": 100
     }
   ],
-  "dateCrawl": "2017-08-04",
-  "id": "15338253",
-  "extractedDates": [
-    {
-      "date": "2017-08-03",
-      "textStart": 645,
-      "amb": false,
-      "textEnd": 657
-    }
-  ],
-  "storyUri": "eng-3336869",
-  "details": {},
   "concepts": [
     {
       "score": 5,
@@ -742,6 +730,19 @@
       "id": "1010108"
     }
   ],
+
+  "dateCrawl": "2017-08-04",
+  "id": "15338253",
+  "extractedDates": [
+    {
+      "date": "2017-08-03",
+      "textStart": 645,
+      "amb": false,
+      "textEnd": 657
+    }
+  ],
+  "storyUri": "eng-3336869",
+  "details": {},
   "timeCrawl": "11:24:00",
   "location": {
     "label": {

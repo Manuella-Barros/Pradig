@@ -37,7 +37,8 @@ def main():
     # key = '28bdc9c2-e717-4ca4-b684-d4744396fe26' #dfaparanhos@cos.ufrj.br ----- bloqueado
     # key = 'a204ebca-0a08-4fb1-82bf-90670cb400c3' #avanderley@cos.ufrj.br ------
     # key = '9c153668-0552-4fa6-bdb6-22027a0459d5' #dlima@cos.ufrj.br -----------
-    key = '44125a48-5ca4-42ee-bd07-80b3430ce68a'  # romulo@cos.ufrj.br -----------
+    # key = '44125a48-5ca4-42ee-bd07-80b3430ce68a' #romulo@cos.ufrj.br -----------
+    key = '365c1d54-dbed-49ad-88d5-076a6b47c17c'   #manu
 
     er = EventRegistry(apiKey=key)
 

@@ -14,6 +14,7 @@ import argparse
 # comando para rodar ->  python main.py -f ./eventos/eventos.txt -e ./logs/
 
 def main():
+    count = 0
     argument_parser = argparse.ArgumentParser(description="Parser from Event Registry")
     argument_parser.add_argument("-f", "--fileLogEvents", type=str, required=True,
                                  help="File containing the log of the events crawled")
@@ -53,6 +54,9 @@ def main():
 
         articleFileName = eventsDirectory + eventUri + '.txt'
 
+        count = count + 1
+
+        print(count)
         print("Event %s\n" % eventUri)
 
         if checkFileExists(articleFileName):
@@ -75,16 +79,23 @@ def main():
             res = er.execQuery(q2)
             articles = res[eventUri]['articles']['results']
 
+            articleAlreadyExists = False
+
             for article in articles:
                 for line in fileRead:  # le linha por linha
                     if 'uri' in line:  # evita as linhas vazias
                         lineJson = json.loads(line)
-                        if lineJson['uri'] == article['uri']:
-                            print("duplicado")
-                            return
 
-                articleFile.write(json.dumps(article))
-                articleFile.write("\n")
+                        if lineJson['uri'] == article['uri']:
+                            articleAlreadyExists = True
+                            print("duplicado")
+
+                if not articleAlreadyExists:
+                    articleFile.write(json.dumps(article))
+                    articleFile.write("\n")
+
+                articleAlreadyExists = False
+
         else:
             articleFile = open(articleFileName, 'w+')
             articleFile.write(json.dumps(event))

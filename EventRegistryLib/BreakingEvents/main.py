@@ -86,7 +86,7 @@ def main():
                     if 'uri' in line:  # evita as linhas vazias
                         lineJson = json.loads(line)
 
-                        if lineJson['uri'] == article['uri']:
+                        if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
                             articleAlreadyExists = True
                             print("duplicado")
 

@@ -2,11 +2,12 @@
 import json
 import os
 
-filesNames = os.listdir("BreakingEvents/logs") # pega o nome dos arquivos
+# filesNames = os.listdir("BreakingEvents/logs") # pega o nome dos arquivos
+filesNames = os.listdir("NewMain/logs") # pega o nome dos arquivos
 urisVector = []
 
 for fileName in filesNames:
-    with open('BreakingEvents/logs/' + fileName, 'r') as file: # aqui abre cada arquivo
+    with open('NewMain/logs/' + fileName, 'r') as file: # aqui abre cada arquivo
         print(fileName)
         for line in file: # le linha por linha
             if 'uri' in line: # evita as linhas vazias

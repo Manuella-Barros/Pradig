@@ -171,44 +171,7 @@ def breakingEvents(eventos, eventsDirectory, er):
 
         print("Event %s\n" % eventUri)
 
-        if checkFileExists(articleFileName):
-            articleFile = open(articleFileName, 'a')
-            fileRead = open(articleFileName, 'r')
-
-            q2 = QueryEvent(eventUri)
-            q2.setRequestedResult(
-                RequestEventArticles(
-                    lang="eng", count=1, sortBy="date", returnInfo=ReturnInfo(
-                        articleInfo=ArticleInfoFlags(
-                            location=True, dates=True, extractedDates=True,
-                            concepts=True, storyUri=True, originalArticle=True, categories=True,
-                            details=True
-                        )
-                    )
-                )
-            )
-
-            res = er.execQuery(q2)
-            articles = res[eventUri]['articles']['results']
-
-            articleAlreadyExists = False
-
-            for article in articles:
-                for line in fileRead:  # le linha por linha
-                    if 'uri' in line:  # evita as linhas vazias
-                        lineJson = json.loads(line)
-
-                        if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
-                            articleAlreadyExists = True
-                            print("duplicado")
-
-                if not articleAlreadyExists:
-                    articleFile.write(json.dumps(article))
-                    articleFile.write("\n")
-
-                articleAlreadyExists = False
-
-        else:
+        if not checkFileExists(articleFileName):
             articleFile = open(articleFileName, 'w+')
             articleFile.write(json.dumps(event))
             articleFile.write("\n")
@@ -227,7 +190,63 @@ def breakingEvents(eventos, eventsDirectory, er):
                 articleFile.write(json.dumps(article))
                 articleFile.write("\n")
 
-        articleFile.close()
+            articleFile.close()
+
+        # if checkFileExists(articleFileName):
+        #     articleFile = open(articleFileName, 'a')
+        #     fileRead = open(articleFileName, 'r')
+        #
+        #     q2 = QueryEvent(eventUri)
+        #     q2.setRequestedResult(
+        #         RequestEventArticles(
+        #             lang="eng", count=1, sortBy="date", returnInfo=ReturnInfo(
+        #                 articleInfo=ArticleInfoFlags(
+        #                     location=True, dates=True, extractedDates=True,
+        #                     concepts=True, storyUri=True, originalArticle=True, categories=True,
+        #                     details=True
+        #                 )
+        #             )
+        #         )
+        #     )
+        #
+        #     res = er.execQuery(q2)
+        #     articles = res[eventUri]['articles']['results']
+        #
+        #     articleAlreadyExists = False
+        #
+        #     for article in articles:
+        #         for line in fileRead:  # le linha por linha
+        #             if 'uri' in line:  # evita as linhas vazias
+        #                 lineJson = json.loads(line)
+        #
+        #                 if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
+        #                     articleAlreadyExists = True
+        #                     print("duplicado")
+        #
+        #         if not articleAlreadyExists:
+        #             articleFile.write(json.dumps(article))
+        #             articleFile.write("\n")
+        #
+        #         articleAlreadyExists = False
+        #
+        # else:
+        #     articleFile = open(articleFileName, 'w+')
+        #     articleFile.write(json.dumps(event))
+        #     articleFile.write("\n")
+        #
+        #     art = QueryEventArticlesIter(eventUri, lang="eng")
+        #
+        #     listArticles = art.execQuery(er, returnInfo=ReturnInfo(
+        #         articleInfo=ArticleInfoFlags(
+        #             location=True, dates=True, extractedDates=True,
+        #             concepts=True, storyUri=True, originalArticle=True, categories=True,
+        #             details=True
+        #         )
+        #     ))
+        #
+        #     for article in listArticles:
+        #         articleFile.write(json.dumps(article))
+        #         articleFile.write("\n")
 
 def selectEnglishEvents(urilist):
     englishArticles = []

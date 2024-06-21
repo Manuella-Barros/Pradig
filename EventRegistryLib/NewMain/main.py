@@ -41,6 +41,15 @@ def main():
 
     while True:
         print("========================================================================================================")
+        print("BREAKING EVENTS")
+        print("========================================================================================================")
+        breakingEvents(eventos, eventsDirectory, er)
+
+        # wait exactly a minute until next batch of new content is ready
+        print("sleeping for 60 seconds...")
+        time.sleep(60.0 - ((time.time() - starttime) % 60.0))
+
+        print("========================================================================================================")
         print("MINUTES STREAM EVENTS")
         print("========================================================================================================")
         minuteStreamEvents(eventos, eventsDirectory, er, recentQ)
@@ -49,14 +58,7 @@ def main():
         print("sleeping for 60 seconds...")
         time.sleep(60.0 - ((time.time() - starttime) % 60.0))
 
-        print("========================================================================================================")
-        print("BREAKING EVENTS")
-        print("========================================================================================================")
-        breakingEvents(eventos, eventsDirectory, er)
 
-        # wait exactly a minute until next batch of new content is ready
-        print("sleeping for 60 seconds...")
-        time.sleep(60.0 - ((time.time() - starttime) % 60.0))
 
 
 def minuteStreamEvents(eventos, eventsDirectory, er, recentQ):
@@ -116,6 +118,7 @@ def minuteStreamEvents(eventos, eventsDirectory, er, recentQ):
                             if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
                                 articleAlreadyExists = True
                                 print("duplicado")
+
 
                     if not articleAlreadyExists:
                         articleFile.write(json.dumps(article))
@@ -191,6 +194,7 @@ def breakingEvents(eventos, eventsDirectory, er):
                 articleFile.write("\n")
 
             articleFile.close()
+
 
         # if checkFileExists(articleFileName):
         #     articleFile = open(articleFileName, 'a')

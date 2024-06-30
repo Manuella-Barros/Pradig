@@ -2,18 +2,7 @@
 import json
 import os
 
-# filesNames = os.listdir("BreakingEvents/logs") # pega o nome dos arquivos
-filesNames = os.listdir("NewMain/logs") # pega o nome dos arquivos
-urisVector = []
-
-for fileName in filesNames:
-    with open('NewMain/logs/' + fileName, 'r') as file: # aqui abre cada arquivo
-        print(fileName)
-        for line in file: # le linha por linha
-            if 'uri' in line: # evita as linhas vazias
-                lineJson = json.loads(line) # o line esta em formato de texto, aqui transforma em objeto
-                urisVector.append(lineJson['uri']) # pega o uri de cada linha
-
+filesNames = os.listdir("NewMain/logs")  # pega o nome dos arquivos
 
 
 def tem_duplicados(vetor):
@@ -27,6 +16,7 @@ def tem_duplicados(vetor):
         frequencia[elemento] = 1
     return False
 
+
 def get_file_name(uri):
     for file_name in filesNames:
         with open('NewMain/logs/' + file_name, 'r') as file:  # aqui abre cada arquivo
@@ -38,4 +28,36 @@ def get_file_name(uri):
 
     return "Não foi encontrado"
 
-print(tem_duplicados(urisVector))
+
+# =====================================================================================
+#             VERIFICA SE TEM URI REPETIDO ENTRE DENTRO DE UM ARQUIVO
+# =====================================================================================
+
+for fileName in filesNames:
+    singleUriVector = []  # ve se tem uris duplicados dentro de um unico arquivo
+
+    with open('NewMain/logs/' + fileName, 'r') as file:  # aqui abre cada arquivo
+        print(fileName)
+        for line in file:  # le linha por linha
+            if 'uri' in line:  # evita as linhas vazias
+                lineJson = json.loads(line)  # o line esta em formato de texto, aqui transforma em objeto
+                singleUriVector.append(lineJson['uri'])  # pega o uri de cada linha
+
+        if tem_duplicados(singleUriVector):
+            break
+
+# =====================================================================================
+#             VERIFICA SE TEM URI REPETIDO ENTRE TODOS OS ARQUIVOS
+# =====================================================================================
+# allUrisVector = []  # ve se tem uris duplicados comparando todos os arquivos
+#
+# for fileName in filesNames:
+#     with open('NewMain/logs/' + fileName, 'r') as file: # aqui abre cada arquivo
+#         print(fileName)
+#         for line in file: # le linha por linha
+#             if 'uri' in line: # evita as linhas vazias
+#                 lineJson = json.loads(line) # o line esta em formato de texto, aqui transforma em objeto
+#                 allUrisVector.append(lineJson['uri']) # pega o uri de cada linha
+#
+# print(tem_duplicados(allUrisVector))
+# =====================================================================================

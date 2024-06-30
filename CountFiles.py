@@ -1,9 +1,15 @@
 import os
 
-# arq = os.listdir("MinuteStreamEvents/logs")
-# arq = os.listdir("BreakingEvents/logs")
-arq = os.listdir("EventRegistryLib/NewMain/logs")
-# arq = os.listdir("NewsApiOrg/dataTxt_NewsApiOrg")
+# arq = os.listdir("EventRegistryLib/MinuteStreamEvents/logs") # 1332
+# arq = os.listdir("EventRegistryLib/BreakingEvents/logs") # 207
+arq = os.listdir("EventRegistryLib/NewMain/logs") #776
+
+# arq = os.listdir("NewsApiOrg/everything/data") #1315
+# arq = os.listdir("NewsApiOrg/TopReadlines/data") #957
+
+# arq = os.listdir("WorldNewsApi/SearchNews/data") #1591
+
+# arq = os.listdir("logsJunção")
 
 print("quantidade de arquivos ")
 print(len(arq))

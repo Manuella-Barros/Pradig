@@ -1,4 +1,6 @@
-# UTILIZANDO O ENDPOINT https://eventregistry.org/api/v1/minuteStreamEvents
+# UTILIZANDO A JUNÇÃO DOS ENDPOINTS
+#   - https://eventregistry.org/api/v1/minuteStreamEvents
+#   - https://eventregistry.org/api/v1/event/getBreakingEvents
 # Pega os artigos que foram adicionados ou atualizados recentemente
 
 from eventregistry import *
@@ -32,7 +34,7 @@ def main():
     # eventsDirectory = '/home/paranhos/PycharmProjects/social-media-data/parser/events/'
     eventsDirectory = args.eventsDirectory
 
-    key = 'a259d829-3579-46ef-9c90-6aab7b4d59a7'
+    key = '5621eb37-8d54-4122-a54d-62863365a4ba'
 
     er = EventRegistry(apiKey=key)
 
@@ -174,7 +176,44 @@ def breakingEvents(eventos, eventsDirectory, er):
 
         print("Event %s\n" % eventUri)
 
-        if not checkFileExists(articleFileName):
+        if checkFileExists(articleFileName):
+            articleFile = open(articleFileName, 'a')
+            fileRead = open(articleFileName, 'r')
+
+            q2 = QueryEvent(eventUri)
+            q2.setRequestedResult(
+                RequestEventArticles(
+                    lang="eng", count=1, sortBy="date", returnInfo=ReturnInfo(
+                        articleInfo=ArticleInfoFlags(
+                            location=True, dates=True, extractedDates=True,
+                            concepts=True, storyUri=True, originalArticle=True, categories=True,
+                            details=True
+                        )
+                    )
+                )
+            )
+
+            res = er.execQuery(q2)
+            articles = res[eventUri]['articles']['results']
+
+            articleAlreadyExists = False
+
+            for article in articles:
+                for line in fileRead:  # le linha por linha
+                    if 'uri' in line:  # evita as linhas vazias
+                        lineJson = json.loads(line)
+
+                        if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
+                            articleAlreadyExists = True
+                            print("duplicado")
+
+                if not articleAlreadyExists:
+                    articleFile.write(json.dumps(article))
+                    articleFile.write("\n")
+
+                articleAlreadyExists = False
+
+        else:
             articleFile = open(articleFileName, 'w+')
             articleFile.write(json.dumps(event))
             articleFile.write("\n")
@@ -193,47 +232,7 @@ def breakingEvents(eventos, eventsDirectory, er):
                 articleFile.write(json.dumps(article))
                 articleFile.write("\n")
 
-            articleFile.close()
-
-
-        # if checkFileExists(articleFileName):
-        #     articleFile = open(articleFileName, 'a')
-        #     fileRead = open(articleFileName, 'r')
-        #
-        #     q2 = QueryEvent(eventUri)
-        #     q2.setRequestedResult(
-        #         RequestEventArticles(
-        #             lang="eng", count=1, sortBy="date", returnInfo=ReturnInfo(
-        #                 articleInfo=ArticleInfoFlags(
-        #                     location=True, dates=True, extractedDates=True,
-        #                     concepts=True, storyUri=True, originalArticle=True, categories=True,
-        #                     details=True
-        #                 )
-        #             )
-        #         )
-        #     )
-        #
-        #     res = er.execQuery(q2)
-        #     articles = res[eventUri]['articles']['results']
-        #
-        #     articleAlreadyExists = False
-        #
-        #     for article in articles:
-        #         for line in fileRead:  # le linha por linha
-        #             if 'uri' in line:  # evita as linhas vazias
-        #                 lineJson = json.loads(line)
-        #
-        #                 if lineJson['uri'] == article['uri']: # se ja tiver esse uri em alguma linha, então não salva
-        #                     articleAlreadyExists = True
-        #                     print("duplicado")
-        #
-        #         if not articleAlreadyExists:
-        #             articleFile.write(json.dumps(article))
-        #             articleFile.write("\n")
-        #
-        #         articleAlreadyExists = False
-        #
-        # else:
+        # if not checkFileExists(articleFileName):
         #     articleFile = open(articleFileName, 'w+')
         #     articleFile.write(json.dumps(event))
         #     articleFile.write("\n")
@@ -251,6 +250,8 @@ def breakingEvents(eventos, eventsDirectory, er):
         #     for article in listArticles:
         #         articleFile.write(json.dumps(article))
         #         articleFile.write("\n")
+        #
+        #     articleFile.close()
 
 def selectEnglishEvents(urilist):
     englishArticles = []

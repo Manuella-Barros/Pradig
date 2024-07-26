@@ -1,0 +1,1 @@
+Apis para pegar jsons de noticias para treinar  a maquina

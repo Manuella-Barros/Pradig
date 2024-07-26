@@ -1,0 +1,1 @@
+algoritimos para normalizar dados, transformando do formato errado para o certo

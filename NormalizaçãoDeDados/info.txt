@@ -1,1 +1,2 @@
-algoritimos para normalizar dados, transformando do formato errado para o certo
+algoritimos para normalizar dados,
+alguns eventos estão com o storyuri diferentes do uri, tem q resolver isso

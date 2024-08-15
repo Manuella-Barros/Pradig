@@ -34,7 +34,7 @@ def main():
     # eventsDirectory = '/home/paranhos/PycharmProjects/social-media-data/parser/events/'
     eventsDirectory = args.eventsDirectory
 
-    key = '9cf5cbd4-e1b7-4425-95b0-597f6aa3346b'
+    key = '289b1b13-24ac-4407-aec7-f14ccc4229ed'
 
     er = EventRegistry(apiKey=key)
 
